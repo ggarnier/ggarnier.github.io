@@ -5,6 +5,15 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: guilhermgarnier
 github_username: ggarnier
+permalink: /:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
+
+# Default settings
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
