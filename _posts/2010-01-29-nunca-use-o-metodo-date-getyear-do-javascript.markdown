@@ -11,9 +11,7 @@ Outro dia fui testar um sistema em diversos browsers, e ao realizar o teste no [
 
 A solução ideal para este problema é substituir o método getYear por getFullYear. Este método retorna o ano completo, com 4 dígitos, em todos os browsers, eliminando qualquer necessidade de verificação de browser. Esta recomendação, inclusive, faz parte da [especificação ECMA-262](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf), na página 242:
 
-{% blockquote %}
-The getFullYear method is preferred for nearly all purposes, because it avoids the "year 2000 problem."
-{% endblockquote %}
+> The getFullYear method is preferred for nearly all purposes, because it avoids the "year 2000 problem."
 
 Após corrigir este bug do Tomahawk, [abri uma issue no Jira do projeto](http://issues.apache.org/jira/browse/TOMAHAWK-1480), anexando um patch para corrigir o problema.
 

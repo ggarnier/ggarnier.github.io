@@ -8,7 +8,7 @@ github_username: ggarnier
 permalink: /:year/:month/:day/:title/
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 # Default settings
 defaults:

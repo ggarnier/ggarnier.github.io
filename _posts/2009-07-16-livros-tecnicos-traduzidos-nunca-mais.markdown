@@ -17,44 +17,44 @@ Ao chegar no capítulo 4, estranhamente os comentários nos códigos passaram a 
 
 Quando comecei a ler o capítulo 5, que fala sobre [generics](http://java.sun.com/j2se/1.5.0/docs/guide/language/generics.html), achei o trecho abaixo bem estranho:
 
-{% blockquote %}
-Antes da versão 1.5, essa teria sido uma declaração de coleção exemplar:
+> Antes da versão 1.5, essa teria sido uma declaração de coleção exemplar:
 
+> ```java
 /**
  * Minha coleção de selos. Contém apenas instâncias de Stamp.
  */
 private final stamps = ...;
-{% endblockquote %}
+```
 
 Não está faltando definir o tipo de _stamps_? Tudo bem, eu não devo ter entendido direito. Sigo a leitura e, um pouco mais à frente aparece o seguinte:
 
-{% blockquote %}
-Com os genéricos, você substituiria o comentário por uma declaração de tipo aperfeiçoada para a coleção que passaria ao compilador as informações que anteriormente ficariam ocultas no comentário:
+> Com os genéricos, você substituiria o comentário por uma declaração de tipo aperfeiçoada para a coleção que passaria ao compilador as informações que anteriormente ficariam ocultas no comentário:
 
+> ```java
 private final stamps = ...;
-{% endblockquote %}
+```
 
 Ué, mudou alguma coisa? Não é exatamente igual ao código anterior? Resolvi pegar o livro original em inglês emprestado com um amigo, e vejo que nele aparecem os seguintes trechos:
 
-{% blockquote %}
-Before release 1.5, this would have been an exemplary collection declaration:
+> Before release 1.5, this would have been an exemplary collection declaration:
 
+> ```java
 // Now a raw collection type - don´t do this!
 
-/**
+> /**
  * My stamp collection. Contains only Stamp instances.
  */
 private final <strong>Collection</strong> stamps = ... ;
-{% endblockquote %}
+```
 
 e
 
-{% blockquote %}
-With generics, you replace the comment with an improved type declaration for the collection that tells the compiler the information that was previously hidden in the comment:
+> With generics, you replace the comment with an improved type declaration for the collection that tells the compiler the information that was previously hidden in the comment:
 
+> ```java
 // Parameterized collection type - typesafe
 private final <strong>Collection &lt;Stamp&gt;</strong> stamps = ... ;
-{% endblockquote %}
+```
 
 Os destaques em negrito são do livro original. Aparentemente, tudo o que estava em negrito foi omitido na tradução! E, se estava em negrito, é porque é exatamente o trecho mais importante do código! Posteriormente, descobri que isso acontece em todo o capítulo 5. Do 6 em diante os códigos voltam ao normal e não encontrei mais nenhuma bizarrice, exceto a tradução de "thread" para "segmento".
 

@@ -9,7 +9,7 @@ A classe ActiveRecord::ConnectionAdapters::Column tem um método human_name que 
 
 1. criar um hash e [redefinir o método human_attribute_name](http://henrik.nyh.se/2007/12/change-displayed-column-name-in-rails-validation-messages):
 
-{% highlight ruby %}
+```ruby
 class Model < ActiveRecord::Base
   HUMANIZED_ATTRIBUTES = {
     num_usuarios => 'Número de usuários'
@@ -19,12 +19,12 @@ class Model < ActiveRecord::Base
     HUMANIZED_ATTRIBUTES[attr.to_sym] || super
   end
 end
-{% endhighlight  %}
+```
 
 2. usar o plugin [human_attribute_override](http://agilewebdevelopment.com/plugins/human_attribute_override). Esta solução é mais simples e elegante:
 
-{% highlight ruby %}
+```ruby
 class Model < ActiveRecord::Base
   attr_human_name :num_usuarios => 'Número de usuários'
 end
-{% endhighlight  %}
+```

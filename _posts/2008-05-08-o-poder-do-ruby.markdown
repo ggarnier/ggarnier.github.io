@@ -19,7 +19,7 @@ Por exemplo: ao realizar uma busca, são exibidos os 10 primeiros resultados, co
 
 Pela descrição acima, percebemos que é uma lógica bem simples, porém meio chata para ser implementada - na maioria das linguagens atuais, isto exigiria um grande número de if's aninhados, para verificarmos se as condições descritas acima são atendidas. Porém, em Ruby o código ficou muito simples e enxuto:
 
-{% highlight ruby %}
+```ruby
 if (num_pages > 1)
   page_start = [1, page-5].max
   page_end = [num_pages, page+4].min
@@ -31,4 +31,4 @@ if (num_pages > 1)
     # Exibe os links
   }
 end
-{% endhighlight  %}
+```

@@ -9,15 +9,15 @@ A execução de testes em Rails é feita, normalmente, com o comando `rake test`
 
 Para executar apenas os testes unitários, executamos o comando `rake test:units`. Para os testes funcionais, `rake test:funcionals`. Mas se quisermos executar um arquivo de testes específico, devemos trocar o rake pelo próprio ruby:
 
-{% highlight ruby %}
+```ruby
 ruby test/unit/usuario_test.rb
-{% endhighlight  %}
+```
 
 Para ser ainda mais específico e executar um único método, basta acrescentar o parâmetro _--name_:
 
-{% highlight ruby %}
+```ruby
 ruby test/unit/usuario_test.rb --name test_dados
-{% endhighlight  %}
+```
 
 Outra vantagem de testar executando o ruby diretamente (sem o rake) é que não ocorre o problema de [tabelas não existentes no ambiente de desenvolvimento](http://blog.guilhermegarnier.com/2008/03/18/configuracoes-fora-do-padrao-em-rails/), como ocorre com o rake.
 

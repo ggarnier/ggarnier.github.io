@@ -15,45 +15,45 @@ Em seguida, tentei instalar no Ubuntu 7.10. As dificuldades foram menores, mas a
 <li>
 <p>Instalar os pré-requisitos:</p>
 
-{% highlight sh %}
+```sh
 sudo apt-get install apache2-mpm-prefork apache2-prefork-dev libapr1-dev
-{% endhighlight  %}
+```
 </li>
 
 <li>
 <p>Instalar a gem do mod_rails:</p>
 
-{% highlight sh %}
+```sh
 sudo gem install passenger
-{% endhighlight  %}
+```
 </li>
 
 <li>
 <p>Definir as seguintes variáveis de ambiente:</p>
 
-{% highlight sh %}
+```sh
 export HTTPD=/path/to/httpd
 export APXS=/path/to/apxs (ou apxs2)
-{% endhighlight  %}
+```
 </li>
 
 <li>
 <p>Executar o script de instalação do módulo Apache:</p>
 
-{% highlight sh %}
+```sh
 sudo /usr/lib/ruby/gems/1.8/gems/passenger-1.0.1/bin/passenger-install-apache2-module
-{% endhighlight  %}
+```
 </li>
 
 <li>
 <p>Habilitar o mod_rails no httpd.conf do Apache, adicionando as linhas a seguir:</p>
 
-{% highlight apache %}
+```apache
 LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-1.0.1/ext/apache2/mod_passenger.so
 RailsSpawnServer /usr/lib/ruby/gems/1.8/gems/passenger-1.0.1/bin/passenger-spawn-server
 RailsRuby /usr/bin/ruby1.8
 RailsEnv PROD
-{% endhighlight  %}
+```
 </li>
 </ul>
 
@@ -63,12 +63,12 @@ A última linha acima define o ambiente Rails que será utilizado. Se você omit
 <li>
 <p>Criar um virtual host no Apache:</p>
 
-{% highlight apache %}
+```apache
 <virtualHost *:80>
   ServerName localhost
   DocumentRoot /var/www/rails/public
 </virtualHost>
-{% endhighlight  %}
+```
 </li></ul>
 
 Na configuração acima, DocumentRoot é o diretório public da sua aplicação Rails.
@@ -81,12 +81,12 @@ Ao concluir estas configurações e reiniciar o Apache, minha aplicação funcio
 <li>
 <p>adicione à configuração do virtual host:</p>
 
-{% highlight apache %}
+```apache
 <directory "/var/www/rails/public">
     Options         FollowSymLinks
     AllowOverride   All
 </directory>
-{% endhighlight  %}
+```
 </li>
 
 <li><p>reinicie o Apache</p></li>

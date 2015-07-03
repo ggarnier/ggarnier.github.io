@@ -11,7 +11,7 @@ Quem utiliza esta configuração e usa Firefox em ambos os sistemas operacionais
 
 O Firefox armazena um diretório com configurações pessoais do usuário. No Linux, esse diretório fica tipicamente em _/home/usuario/.mozilla/Firefox/_, e no Windows, em _C:\Documents and Settings\usuario\Dados de aplicativos\Mozilla\Firefox\\_. Este diretório contém, entre outras coisas, um subdiretório _Profiles_ com todos os perfis criados (mais detalhes sobre isso no post sobre [gerenciamento de perfis no Firefox](http://blog.guilhermegarnier.com/2009/02/gerenciamento-de-perfis-no-firefox/)) e um arquivo _profiles.ini_. Este arquivo é carregado na inicialização do browser, e faz referência aos perfis utilizados. O formato do arquivo é como mostra o exemplo abaixo:
 
-{% highlight ini %}
+```ini
 [General]
 StartWithLastProfile=1
 
@@ -25,7 +25,7 @@ Name=teste
 IsRelative=1
 Path=Profiles/nkc5ofgt.default
 Default=1
-{% endhighlight  %}
+```
 
 O arquivo é dividido em seções. A primeira, _General_, tem somente o parâmetro _StartWithLastProfile_: se for 0, será exibida a [tela de seleção de perfis](http://blog.guilhermegarnier.com/2009/02/gerenciamento-de-perfis-no-firefox/); se for 1, o último perfil que foi usado será escolhido automaticamente.
 
@@ -59,12 +59,12 @@ Entre as duas opções, pessoalmente, prefiro a segunda, pois não gosto da idei
 
 Após realizar o mapeamento da partição, de uma das duas formas acima, basta configurar o arquivo _profiles.ini_ do Firefox. Para isso, é possível configurar o path completo para o perfil desejado e definir o parâmetro _IsRelative=0_, ou fazer um link no diretório onde o Firefox armazena os perfis e configurar o path relativo, com o parâmetro _IsRelative=1_. A primeira configuração ficaria como no exemplo abaixo:
 
-{% highlight ini %}
+```ini
 [Profile0]
 Name=default
 IsRelative=0
 Path=/media/windows/Documents and Settings/guilherme/Dados de aplicativos/Mozilla/Firefox/Profiles/sa8ww6mz.default
-{% endhighlight  %}
+```
 
 Para a segunda configuração, é necessário criar um link com o comando `ln`:
 
@@ -72,12 +72,12 @@ Para a segunda configuração, é necessário criar um link com o comando `ln`:
 
 Neste caso, a configuração do arquivo ficaria assim:
 
-{% highlight ini %}
+```ini
 [Profile0]
 Name=default
 IsRelative=1
 Path=Profiles/sa8ww6mz.default
-{% endhighlight  %}
+```
 
 Possíveis problemas
 -------------------
