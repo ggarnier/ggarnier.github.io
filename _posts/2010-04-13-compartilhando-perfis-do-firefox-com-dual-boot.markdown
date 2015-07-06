@@ -53,7 +53,7 @@ Mapeando uma partição do Linux no Windows
 
 Para isso, é necessário instalar uma ferramenta como o [Ext2 IFS](http://www.fs-driver.org/) - que, apesar do nome, também suporta ext3. Ao instalar esta ferramenta, será possível mapear qualquer partição ext2 ou ext3 como um drive comum. A figura abaixo mostra uma tela da ferramenta, onde aparecem todas as partições dos discos locais. Em cada partição do Linux, há uma combo box que permite selecionar a letra em que a partição será mapeada - selecionando _none_ o mapeamento será desfeito.
 
-<a href="/images/uploads/2010/04/ext2_ifs.jpg" class="post-image-link">![Ext2 IFS](/images/uploads/2010/04/ext2_ifs.jpg =300x113)</a>
+<a href="/images/ext2_ifs.jpg" class="post-image-link">![Ext2 IFS](/images/ext2_ifs.jpg)</a>
 
 Entre as duas opções, pessoalmente, prefiro a segunda, pois não gosto da ideia do Windows acessando minhas partições do Linux - só mapeio uma partição com o Ext2 IFS quando preciso copiar algum arquivo, depois desfaço o mapeamento.
 

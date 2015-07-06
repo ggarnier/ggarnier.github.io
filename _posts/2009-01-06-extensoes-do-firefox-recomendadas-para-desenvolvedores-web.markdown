@@ -25,7 +25,7 @@ Quase todo usuário de Firefox que tem um blog já postou uma lista de extensõe
 
     Extensão muito poderosa, que exibe uma janela listando todos os arquivos Javascript da página atual. Pode-se definir breakpoints no código e executá-lo passo a passo, verificar e alterar valores de variáveis e tudo o que se espera de uma ferramenta de debug.
 
-    <a href="/images/uploads/2009/01/firefox-javascript_debugger.png" class="post-image-link">![Javascript Debugger](/images/uploads/2009/01/firefox-javascript_debugger.png =300x210)</a>
+    <a href="/images/firefox-javascript_debugger.png" class="post-image-link">![Javascript Debugger](/images/firefox-javascript_debugger.png)</a>
 
 - [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/748)
 
@@ -47,7 +47,7 @@ Quase todo usuário de Firefox que tem um blog já postou uma lista de extensõe
 
     Exibe numa janela os cabeçalhos HTTP de cada requisição, auxiliando na verificação de erros de rede. As informações dos cabeçalhos também podem ser exibidas numa barra lateral, e as URLs das requisições que serão analisadas podem ser definidas como expressões regulares.
 
-    <a href="/images/uploads/2009/01/firefox-live_http_headers.png" class="post-image-link">![Live HTTP Headers](/images/uploads/2009/01/firefox-live_http_headers.png =300x208)</a>
+    <a href="/images/firefox-live_http_headers.png" class="post-image-link">![Live HTTP Headers](/images/firefox-live_http_headers.png)</a>
 
 - [Aardvark](https://addons.mozilla.org/en-US/firefox/addon/4111)
 
@@ -65,7 +65,7 @@ Quase todo usuário de Firefox que tem um blog já postou uma lista de extensõe
 
     Quando uma página estiver inacessível, esta extensão exibirá uma tela alternativa de erro, com opções para consultar esta página no Google Cache, tentar ping e trace, entre outras opções.
 
-    <a href="/images/uploads/2009/01/firefox-errorzilla.png" class="post-image-link">![ErrorZilla Mod](/images/uploads/2009/01/firefox-errorzilla.png =300x210)</a>
+    <a href="/images/firefox-errorzilla.png" class="post-image-link">![ErrorZilla Mod](/images/firefox-errorzilla.png)</a>
 
 - [CheckBoxMate](http://dragtotab.mozdev.org/checkboxmate/)
 

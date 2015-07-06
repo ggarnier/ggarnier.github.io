@@ -13,7 +13,7 @@ Uma dica útil para quem deseja utilizar muitas extensões, mas não tem necessi
 
 Fazendo isto, aparecerá uma janela como a seguinte:
 
-<a href="/images/uploads/2009/02/firefox-profile_manager.png" class="post-image-link">![Profile Manager](/images/uploads/2009/02/firefox-profile_manager.png =300x212)</a>
+<a href="/images/firefox-profile_manager.png" class="post-image-link">![Profile Manager](/images/firefox-profile_manager.png)</a>
 
 Nesta janela, aparecerão todos os perfis existentes, e você pode selecionar o que deseja utilizar. Também é possível criar, renomear e excluir perfis. Desmarcando a opção "Don't ask at startup", esta tela do Profile Manager será exibida sempre que o Firefox for executado.
 
@@ -25,7 +25,7 @@ Outra opção de linha de comando bastante útil é o [Safe Mode](http://kb.mozi
 
 No Safe Mode, todas as extensões, temas e demais customizações são desabilitadas, permitindo a desinstalação da extensão problemática, se for o caso. Além disso, é possível fazer algumas alterações permanentes, como resetar as preferências e bookmarks de usuários e desabilitar as extensões.
 
-<a href="/images/uploads/2009/02/firefox-safe_mode.png" class="post-image-link">![Firefox Safe Mode](/images/uploads/2009/02/firefox-safe_mode.png =300x169)</a>
+<a href="/images/firefox-safe_mode.png" class="post-image-link">![Firefox Safe Mode](/images/firefox-safe_mode.png)</a>
 
 Para fazer backup de um perfil, existem várias extensões disponíveis. A que achei mais interessante é o [FEBE](https://addons.mozilla.org/en-US/firefox/addon/2109). Esta extensão permite selecionar especificamente quais itens do perfil você deseja incluir no backup (extensões, temas, bookmarks, configurações, cookies, histórico e outras opções), executar o backup manualmente ou agendar para execução diária, semanal ou mensal, verificar os backups anteriores e outras opções. A opção de restauração de um backup também é seletiva: você pode restaurar somente os itens que desejar ou o perfil completo.
 
@@ -46,4 +46,4 @@ Mais informações:
 - [Opening a new instance of Firefox with another profile](http://kb.mozillazine.org/Opening_a_new_instance_of_Firefox_with_another_profile)
 - [Outros parâmetros de linha de comando](http://kb.mozillazine.org/Command_line_arguments)
 
-Obrigado ao Tóin pelas [dicas](http://blog.guilhermegarnier.com/2009/02/05/gerenciamento-de-perfis-no-firefox/#comment-119).
+Obrigado ao Tóin pelas [dicas](#comment-119).
