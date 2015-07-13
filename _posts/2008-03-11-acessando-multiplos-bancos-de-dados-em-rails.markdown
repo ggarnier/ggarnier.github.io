@@ -5,13 +5,13 @@ title: "Acessando múltiplos bancos de dados em Rails"
 date: 2008-03-11
 categories: [Rails, Ruby, Active Record]
 ---
-Esta semana me deparei com uma situação no projeto em Rails em que estou trabalhando, onde necessitei acessar um banco de dados de outra aplicação, para fazer algumas consultas simples. Eu poderia simplesmente fazer a conexão com o banco e as querys em SQL. Porém, eu obviamente queria aproveitar as facilidades que o Rails proporciona ao abstrair estes detalhes com a classe _ActiveRecord::Base_.
+Esta semana me deparei com uma situação no projeto em Rails em que estou trabalhando, onde necessitei acessar um banco de dados de outra aplicação, para fazer algumas consultas simples. Eu poderia simplesmente fazer a conexão com o banco e as querys em SQL. Porém, eu obviamente queria aproveitar as facilidades que o Rails proporciona ao abstrair estes detalhes com a classe `ActiveRecord::Base`.
 
-Quando criamos um novo model em Rails, a nova classe criada, derivada de _ActiveRecord::Base_, é mapeada por padrão em uma tabela no banco de dados da aplicação - o Rails assume o nome da classe no plural, mas permite que você especifique um nome diferente. Na migration que também é criada automaticamente, a tabela correspondente é definida. Porém, neste caso, eu não queria criar uma tabela, pois ela já existe. Além disso, é um servidor de banco de dados diferente, com usuário e senha diferentes.
+Quando criamos um novo model em Rails, a nova classe criada, derivada de `ActiveRecord::Base`, é mapeada por padrão em uma tabela no banco de dados da aplicação - o Rails assume o nome da classe no plural, mas permite que você especifique um nome diferente. Na migration que também é criada automaticamente, a tabela correspondente é definida. Porém, neste caso, eu não queria criar uma tabela, pois ela já existe. Além disso, é um servidor de banco de dados diferente, com usuário e senha diferentes.
 
 Após alguma pesquisa, descobri como resolver este problema. Suponha que você queira acessar uma base de usuários para compartilhar login e senha:
 
-1. especificar a nova conexão no arquivo _config/database.yml_. No exemplo abaixo, defini o nome "autenticacao_development", supondo que tenhamos outras conexões para teste e produção:
+1. especificar a nova conexão no arquivo `config/database.yml`. No exemplo abaixo, defini o nome `autenticacao_development`, supondo que tenhamos outras conexões para teste e produção:
 
 ```ruby
 autenticacao_development:
@@ -22,7 +22,7 @@ autenticacao_development:
   database: autenticacao
 ```
 
-2. criar uma classe abstrata (model), derivada de _ActionRecord::Base_, e usar o método _establish_connection_ para referenciar a conexão. O parâmetro "autenticacao\_#{RAILS_ENV}" usa a variável _RAILS_ENV_ para especificar a conexão relativa ao ambiente (_autenticacao_development_, _autenticacao_test_ ou _autenticacao_production_):
+2. criar uma classe abstrata (model), derivada de `ActionRecord::Base`, e usar o método `establish_connection` para referenciar a conexão. O parâmetro `autenticacao_#{RAILS_ENV}` usa a variável `RAILS_ENV` para especificar a conexão relativa ao ambiente (`autenticacao_development`, `autenticacao_test` ou `autenticacao_production`):
 
 ```ruby
 class AutenticacaoDatabase < ActiveRecord::Base
@@ -31,7 +31,7 @@ class AutenticacaoDatabase < ActiveRecord::Base
 end
 ```
 
-3. para cada tabela deste banco de dados que será acessada, criar uma nova classe (model) derivada da classe _AutenticacaoDatabase_ recém-criada. Caso o nome da tabela seja diferente do padrão (o nome da classe no plural), use o método set_table_name para especificar o nome correto. E se a primary key não for "id", use "set_primary_key" para definir o nome correto deste campo.
+3. para cada tabela deste banco de dados que será acessada, criar uma nova classe (model) derivada da classe `AutenticacaoDatabase` recém-criada. Caso o nome da tabela seja diferente do padrão (o nome da classe no plural), use o método `set_table_name` para especificar o nome correto. E se a primary key não for `id`, use `set_primary_key` para definir o nome correto deste campo.
 
 ```ruby
 class Usuario < AutenticacaoDatabase

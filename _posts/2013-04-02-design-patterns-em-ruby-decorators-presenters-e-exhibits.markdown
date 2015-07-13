@@ -5,9 +5,9 @@ title: "Design patterns em Ruby - Decorators, Presenters e Exhibits"
 date: 2013-04-02
 categories: [Ruby, design patterns, Rails, engenharia de software]
 ---
-Ao criar um novo projeto Rails, o generator cria uma estrutura padrão de diretórios. Dentro de _app_, ele cria os diretórios _models_, _controllers_, _views_ e _helpers_. Os três primeiros tem papéis bem definidos, mas mesmo assim há uma certa confusão quando surge algum arquivo "fora do padrão".
+Ao criar um novo projeto Rails, o generator cria uma estrutura padrão de diretórios. Dentro de `app`, ele cria os diretórios `models`, `controllers`, `views` e `helpers`. Os três primeiros tem papéis bem definidos, mas mesmo assim há uma certa confusão quando surge algum arquivo "fora do padrão".
 
-Numa aplicação típica, um model geralmente estende a classe _ActiveRecord::Base_ ou inclui um módulo, como _Mongoid::Document_, no caso do [Mongoid](http://mongoid.org), por exemplo, para mapear a estrutura do banco de dados. Além disso, o model contém as regras de negócio associadas a ele. O controller tem a responsabilidade de mapear a ação atual numa view - por exemplo, ao submeter um formulário para criação de um novo objeto, um controller típico renderiza uma view exibindo uma mensagem de sucesso, ou renderiza a mesma view do formulário com as mensagens de erro, caso haja algum. Já a view é responsável por exibir os dados correspondentes à página atual.
+Numa aplicação típica, um model geralmente estende a classe `ActiveRecord::Base` ou inclui um módulo, como `Mongoid::Document`, no caso do [Mongoid](http://mongoid.org), por exemplo, para mapear a estrutura do banco de dados. Além disso, o model contém as regras de negócio associadas a ele. O controller tem a responsabilidade de mapear a ação atual numa view - por exemplo, ao submeter um formulário para criação de um novo objeto, um controller típico renderiza uma view exibindo uma mensagem de sucesso, ou renderiza a mesma view do formulário com as mensagens de erro, caso haja algum. Já a view é responsável por exibir os dados correspondentes à página atual.
 
 Essa estrutura básica funciona bem numa aplicação simples. O problema é quando a view começa a conter muita lógica. Por exemplo, uma view para exibir dados de um usuário poderia ser simples assim:
 
@@ -108,7 +108,7 @@ class UsuarioDecorator
 end
 ```
 
-Desta forma, temos uma classe que recebe o model no construtor ou no método de classe _decorate_. A implementação do método titulo_usuario no Decorator ficou muito mais simples. Para utilizá-la, basta decorar o model no controller:
+Desta forma, temos uma classe que recebe o model no construtor ou no método de classe `decorate`. A implementação do método `titulo_usuario` no Decorator ficou muito mais simples. Para utilizá-la, basta decorar o model no controller:
 
 ```ruby
 class UsuariosController
@@ -160,7 +160,7 @@ class Exhibit
 end
 ```
 
-Este contexto pode ser o _view_context_ do controller:
+Este contexto pode ser o `view_context` do controller:
 
 ```ruby
 class Controller

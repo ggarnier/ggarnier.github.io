@@ -13,13 +13,12 @@ Para executar apenas os testes unitários, executamos o comando `rake test:units
 ruby test/unit/usuario_test.rb
 ```
 
-Para ser ainda mais específico e executar um único método, basta acrescentar o parâmetro _--name_:
+Para ser ainda mais específico e executar um único método, basta acrescentar o parâmetro `--name`:
 
 ```ruby
 ruby test/unit/usuario_test.rb --name test_dados
 ```
 
-Outra vantagem de testar executando o ruby diretamente (sem o rake) é que não ocorre o problema de [tabelas não existentes no ambiente de desenvolvimento](http://blog.guilhermegarnier.com/2008/03/18/configuracoes-fora-do-padrao-em-rails/), como ocorre com o rake.
+Outra vantagem de testar executando o Ruby diretamente (sem o rake) é que não ocorre o problema de [tabelas não existentes no ambiente de desenvolvimento]({% post_url 2008-03-18-configuracoes-fora-do-padrao-em-rails %}), como ocorre com o rake.
 
-Referência:
-- [Rails: Unit Test without Rails](http://blog.jayfields.com/2007/10/rails-unit-test-without-rails.html)
+Referência: [Rails: Unit Test without Rails](http://blog.jayfields.com/2007/10/rails-unit-test-without-rails.html)

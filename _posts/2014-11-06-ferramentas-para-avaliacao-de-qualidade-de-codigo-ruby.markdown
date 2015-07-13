@@ -38,7 +38,7 @@ Como ele tem foco em segurança, é muito importante manter esta gem sempre atua
 
 O foco do RuboCop é localizar más práticas de programação no seu código, com base no [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide). Algumas das regras são: uso de aspas simples ou duplas para definir strings, tamanho máximo da linha, número de linhas em cada método e uso de espaços na definição de hashes.
 
-Todas as regras do RuboCop podem ser configuradas ou desabilitadas. Basta criar um arquivo _.rubocop.yml_ na raiz do projeto com as configurações desejadas. Ele também possui regras específicas para projetos usando Rails.
+Todas as regras do RuboCop podem ser configuradas ou desabilitadas. Basta criar um arquivo `.rubocop.yml` na raiz do projeto com as configurações desejadas. Ele também possui regras específicas para projetos usando Rails.
 
 Se você usa o editor [Atom](https://atom.io/), também é possível executar o RuboCop automaticamente com o plugin [atom-lint](https://atom.io/packages/atom-lint). Assim, ao salvar um arquivo, o RuboCop é automaticamente executado, e os alertas são exibidos no próprio editor, ao lado de cada linha.
 

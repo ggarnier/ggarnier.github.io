@@ -5,21 +5,21 @@ title: "Gerenciando múltiplas versões de Ruby no Windows"
 date: 2011-05-19
 categories: [Ruby, JRuby, Pik, RVM, Windows]
 ---
-O [RVM](https://rvm.beginrescueend.com/) já se tornou a opção padrão para gerenciar múltiplas versões de Ruby. Ele permite instalar várias versões, alternar entre elas, instalar gems em cada versão independentemente... mas não funciona em ambiente Windows. Eu sei que este não é um ambiente muito popular para desenvolvimento Ruby, mas existem usuários de Windows (seja por opção ou por obrigação) programando em Ruby. Para estes, uma alternativa ao RVM é o [Pik](https://github.com/vertiginous/pik).
+O [RVM](https://rvm.io/) já se tornou a opção padrão para gerenciar múltiplas versões de Ruby. Ele permite instalar várias versões, alternar entre elas, instalar gems em cada versão independentemente... mas não funciona em ambiente Windows. Eu sei que este não é um ambiente muito popular para desenvolvimento Ruby, mas existem usuários de Windows (seja por opção ou por obrigação) programando em Ruby. Para estes, uma alternativa ao RVM é o [Pik](https://github.com/vertiginous/pik).
 
-O Pik funciona de forma bastante semelhante ao RVM. Para instalá-lo, primeiro é necessário instalar o [Ruby Installer](http://rubyinstaller.org/), um pacote pré-configurado especialmente para instalar o Ruby no Windows. A documentação do Pik recomenda a versão 1.8.7. Em seguida, instale as gems _rake_, _isolate_ e o próprio _pik_:
+O Pik funciona de forma bastante semelhante ao RVM. Para instalá-lo, primeiro é necessário instalar o [Ruby Installer](http://rubyinstaller.org/), um pacote pré-configurado especialmente para instalar o Ruby no Windows. A documentação do Pik recomenda a versão 1.8.7. Em seguida, instale as gems `rake`, `isolate` e o próprio `pik`:
 
 ```bat
 gem install rake isolate pik
 ```
 
-Antes de instalar o _isolate_, talvez seja necessário atualizar o [Rubygems](http://rubygems.org/) com o comando abaixo:
+Antes de instalar o `isolate`, talvez seja necessário atualizar o [Rubygems](http://rubygems.org/) com o comando abaixo:
 
 ```bat
 gem update --system
 ```
 
-O próximo passo é instalar o Pik no diretório de sua preferência. Um detalhe importante que já me custou um bom tempo é que o path completo não deve conter espaços. Execute o seguinte comando para instalar em _C:\Ruby\pik_, por exemplo:
+O próximo passo é instalar o Pik no diretório de sua preferência. Um detalhe importante que já me custou um bom tempo é que o path completo não deve conter espaços. Execute o seguinte comando para instalar em `C:\Ruby\pik`, por exemplo:
 
 ```bat
 pik_install C:\Ruby\pik
@@ -102,7 +102,7 @@ Installing RDoc documentation for mongo-1.3.1...
 
 ```
 
-O comando `pik ruby` permite executar um código em todas as versões instaladas, útil para verificar incompatibilidades entre as versões, como por exemplo [o construtor com parâmetros da classe Time](http://blog.guilhermegarnier.com/2011/03/representacao-de-data-e-hora-em-ruby-1-8-7-e-1-9/):
+O comando `pik ruby` permite executar um código em todas as versões instaladas, útil para verificar incompatibilidades entre as versões, como por exemplo [o construtor com parâmetros da classe Time]({% post_url 2011-03-01-representacao-de-data-e-hora-em-ruby-1-8-7-e-1-9 %}):
 
 ```bat
 C:\Ruby\pik>pik ruby -e "puts Time.new('2011-01-01')"

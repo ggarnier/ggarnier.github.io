@@ -14,7 +14,7 @@ cd /usr/lib
 sudo mv firefox firefox-2.0
 ```
 
-Descompactei o Firefox 3.0 neste mesmo local, e movi o diretório para _firefox-3.0_, criando em seguida um link simbólico para firefox. Desta forma, fica mais fácil voltar a utilizar o Firefox 2 caso eu necessite:
+Descompactei o Firefox 3.0 neste mesmo local, e movi o diretório para `firefox-3.0`, criando em seguida um link simbólico para firefox. Desta forma, fica mais fácil voltar a utilizar o Firefox 2 caso eu necessite:
 
 ```sh
 sudo tar xvfj firefox-3.0.tar.bz2
@@ -67,7 +67,7 @@ cd ~
 cp -r .mozilla FIREFOX-2.0_BACKUP
 ```
 
-Pronto, o Firefox 3.0 já está instalado. Para retornar à versão 2, basta remover o link _/usr/lib/firefox_ e criar outro apontando para _firefox2.0_:
+Pronto, o Firefox 3.0 já está instalado. Para retornar à versão 2, basta remover o link `/usr/lib/firefox` e criar outro apontando para `firefox2.0`:
 
 ```sh
 cd /usr/lib

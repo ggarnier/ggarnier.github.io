@@ -16,7 +16,7 @@ As opções de IDE para Rails também são variadas, e as duas principais são o
 Aptana RadRails
 ---------------
 
-O Aptana RadRails pode ser instalado como um plugin do Eclipse ou isoladamente, caso você não o tenha instalado. Na primeira vez que o testei, há alguns meses, achei o plugin bastante instável, e com alguns bugs incômodos. Recentemente, ao verificar que havia uma nova versão disponível, testei novamente, e verifiquei que esta nova versão está bem melhor. Há alguns meses atrás, escrevi [neste post](http://blog.guilhermegarnier.com/2008/02/15/usando-dry-no-databaseyml/) que o RadRails não conseguia ler arquivos database.yml usando o formato descrito. Conforme [este comentário](http://blog.guilhermegarnier.com/2008/02/15/usando-dry-no-databaseyml/#comment-4) do Chris Williams, um dos desenvolvedores do RadRails, a nova versão corrigiu este problema e outros que eu havia encontrado. A versão mais recente também possui um Ruby Shell bastante útil, inclusive com autocomplete de comandos e parâmetros, porém instável - já o vi travar algumas vezes. Outras vantagens do RadRails são:
+O Aptana RadRails pode ser instalado como um plugin do Eclipse ou isoladamente, caso você não o tenha instalado. Na primeira vez que o testei, há alguns meses, achei o plugin bastante instável, e com alguns bugs incômodos. Recentemente, ao verificar que havia uma nova versão disponível, testei novamente, e verifiquei que esta nova versão está bem melhor. Há alguns meses atrás, escrevi [neste post]({% post_url 2008-02-15-usando-dry-no-databaseyml %}) que o RadRails não conseguia ler arquivos database.yml usando o formato descrito. Conforme [este comentário]({% post_url 2008-02-15-usando-dry-no-databaseyml %}#comment-1156492925) do Chris Williams, um dos desenvolvedores do RadRails, a nova versão corrigiu este problema e outros que eu havia encontrado. A versão mais recente também possui um Ruby Shell bastante útil, inclusive com autocomplete de comandos e parâmetros, porém instável - já o vi travar algumas vezes. Outras vantagens do RadRails são:
 
 - Botões para acesso rápido ao Model, View, Controller, Helper e Test equivalentes ao arquivo ativo
 - Problema do DRY no database.yml corrigido
@@ -26,8 +26,8 @@ As principais desvantagens do RadRails são:
 
 - Problemas no autocomplete (não mostra todos os métodos)
 - O console não aceita a tecla para cima para acessar os últimos comandos, como no shell
-- Ruby shell instável (trava com freqüência)
-- Server não permite selecionar um environment diferente dos 3 defaults (development, test e production), mesmo que você tenha algum outro environment definido no arquivo database.yml
+- Ruby shell instável (trava com frequência)
+- Server não permite selecionar um environment diferente dos 3 defaults (development, test e production), mesmo que você tenha algum outro environment definido no arquivo `database.yml`
 
 NetBeans
 --------

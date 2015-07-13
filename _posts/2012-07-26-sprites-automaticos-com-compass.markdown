@@ -21,11 +21,11 @@ $imagens-sprite-dimensions: true
 @import "imagens/*.png"
 ```
 
-No exemplo acima, todas as propriedades são configuradas com o prefixo _imagens_. O sprite é configurado com espaçamento de 2 pixels entre cada imagem, para evitar sobreposição no limite entre as imagens. A segunda linha habilita a inclusão das dimensões das imagens no CSS gerado, o que é útil para manter fixo o tamanho ocupado pela imagem enquanto ela é carregada. A terceira linha informa quais imagens serão adicionadas. Neste caso, são todas as imagens com extensão png que estão no diretório _imagens_. É importante lembrar que o nome deste diretório deve ser igual ao prefixo utilizado nas propriedades.
+No exemplo acima, todas as propriedades são configuradas com o prefixo `imagens`. O sprite é configurado com espaçamento de 2 pixels entre cada imagem, para evitar sobreposição no limite entre as imagens. A segunda linha habilita a inclusão das dimensões das imagens no CSS gerado, o que é útil para manter fixo o tamanho ocupado pela imagem enquanto ela é carregada. A terceira linha informa quais imagens serão adicionadas. Neste caso, são todas as imagens com extensão png que estão no diretório `imagens`. É importante lembrar que o nome deste diretório deve ser igual ao prefixo utilizado nas propriedades.
 
-Além de gerar o sprite, o Compass cria classes CSS para referenciar cada imagem. Os nomes das classes começam com o prefixo utilizado acima, seguido por hífen e o nome da imagem sem extensão. Por exemplo, para uma imagem chamada _excluir.png_, a classe teria o nome _imagens-excluir_.
+Além de gerar o sprite, o Compass cria classes CSS para referenciar cada imagem. Os nomes das classes começam com o prefixo utilizado acima, seguido por hífen e o nome da imagem sem extensão. Por exemplo, para uma imagem chamada `excluir.png`, a classe teria o nome `imagens-excluir`.
 
-O uso as imagens do sprite no seu CSS pode ser feito de duas formas: usando diretamente as classes criadas pelo Compass (como _imagens-excluir_, no exemplo anterior) ou utilizando um mixin do Compass no seu arquivo [Sass](http://sass-lang.com/):
+O uso as imagens do sprite no seu CSS pode ser feito de duas formas: usando diretamente as classes criadas pelo Compass (como `imagens-excluir`, no exemplo anterior) ou utilizando um mixin do Compass no seu arquivo [Sass](http://sass-lang.com/):
 
 ```css
 .minha-classe { @include imagens-sprite(excluir); }
@@ -41,9 +41,9 @@ $imagens-admin-sprite-dimensions: true
 @import "admin/imagens-admin/*.png"
 ```
 
-Neste exemplo, as imagens do sprite estão no diretório _admin/imagens-admin_, e o prefixo segue o nome do último diretório (_imagens-admin_). Isso significa que, no exemplo acima, não seria possível manter o sprite do admin em _admin/imagens_, pois haveria conflito de nomes com o outro sprite.
+Neste exemplo, as imagens do sprite estão no diretório `admin/imagens-admin`, e o prefixo segue o nome do último diretório (`imagens-admin`). Isso significa que, no exemplo acima, não seria possível manter o sprite do admin em `admin/imagens`, pois haveria conflito de nomes com o outro sprite.
 
-Os sprites gerados pelo Compass são arquivos png que tem como nome o prefixo utilizado na configuração seguido por um hash (ex: _imagens-b03bdb7a79370e7ff107e7b37fe7df6e.png_). Quando o sprite é modificado (em ambiente de desenvolvimento o Compass verifica automaticamente a cada request se alguma imagem foi adicionada ou removida, e em produção é necessário executar um `rake task` para isso), o Compass gera um novo hash para o nome do arquivo. Isto é feito para evitar que o sprite seja cacheado pelo browser. Se isso acontecesse, o browser não buscaria o sprite atualizado, mantendo o arquivo anterior.
+Os sprites gerados pelo Compass são arquivos png que tem como nome o prefixo utilizado na configuração seguido por um hash (ex: `imagens-b03bdb7a79370e7ff107e7b37fe7df6e.png`). Quando o sprite é modificado (em ambiente de desenvolvimento o Compass verifica automaticamente a cada request se alguma imagem foi adicionada ou removida, e em produção é necessário executar um `rake task` para isso), o Compass gera um novo hash para o nome do arquivo. Isto é feito para evitar que o sprite seja cacheado pelo browser. Se isso acontecesse, o browser não buscaria o sprite atualizado, mantendo o arquivo anterior.
 
 Os exemplos descritos acima descrevem apenas as configurações básicas para geração de sprites. A [documentação de sprites](http://compass-style.org/help/tutorials/spriting/) traz mais detalhes sobre as opções de configuração. Além disso, o Compass tem muitas outras funcionalidades. Vale a pena pesquisar a [referência no site do Compass](http://compass-style.org/reference/compass/) para mais detalhes.
 

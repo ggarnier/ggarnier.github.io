@@ -7,9 +7,9 @@ categories: [Ubuntu, Linux, Internet, rede, PPPoE, scripts, Shell]
 ---
 No meu computador pessoal, o acesso a Internet é através de um link de rádio. A autenticação no provedor utiliza PPPoE. Para configurar a autenticação no Windows XP, basta usar o cliente PPPoE que vem por padrão. No Ubuntu também é muito simples, basta executar o comando `pppoeconf`, e seguir os passos de configuração. Na maioria das perguntas só precisei selecionar a opção default. Fora isso, são solicitados username e senha do provedor. Ao término da configuração, a interface PPP já está configurada, e é ativada automaticamente na inicialização.
 
-Apesar de a configuração acima ter funcionado no Ubuntu, a conexão parava de funcionar com freqUência (a cada 20 ou 30 minutos, aproximadamente). Apesar de continuar aparecendo como ativa, eu não conseguia acessar nada. Quando isto ocorria, eu precisava executar o comando `poff` para encerrar a conexão e, em seguida, `pon dsl-provider` para restabelecê-la. A princípio, achei que fosse algum problema do provedor; porém, isso não ocorre no Windows XP.
+Apesar de a configuração acima ter funcionado no Ubuntu, a conexão parava de funcionar com frequência (a cada 20 ou 30 minutos, aproximadamente). Apesar de continuar aparecendo como ativa, eu não conseguia acessar nada. Quando isto ocorria, eu precisava executar o comando `poff` para encerrar a conexão e, em seguida, `pon dsl-provider` para restabelecê-la. A princípio, achei que fosse algum problema do provedor; porém, isso não ocorre no Windows XP.
 
-Encontrei algumas referências a esse problema nos forums do Ubuntu, mas nenhuma solução definitiva. Para resolver, criei um script que verifica periodicamente se a conexão está ativa (na verdade, tenta pingar o site do provedor 3 vezes, aumentando o timeout a cada tentativa). Em caso negativo, executa os comandos `poff` e `pon`, conforme descrito acima, e repete o procedimento. Segue o script abaixo (salvei-o como _/home/guilherme/scripts/internet.sh_):
+Encontrei algumas referências a esse problema nos forums do Ubuntu, mas nenhuma solução definitiva. Para resolver, criei um script que verifica periodicamente se a conexão está ativa (na verdade, tenta pingar o site do provedor 3 vezes, aumentando o timeout a cada tentativa). Em caso negativo, executa os comandos `poff` e `pon`, conforme descrito acima, e repete o procedimento. Segue o script abaixo (salvei-o como `/home/guilherme/scripts/internet.sh`):
 
 ```sh
 #!/bin/bash
@@ -55,9 +55,9 @@ done
 exit 0
 ```
 
-Os parâmetros no início do script definem os paths para os comandos utilizados (`ping`, `pon` e `poff`), o nome do provedor, conforme foi especificado no comando `pppoeconf` (o default é _dsl-provider_), o host que será pingado e a freqüência de execução do loop.
+Os parâmetros no início do script definem os paths para os comandos utilizados (`ping`, `pon` e `poff`), o nome do provedor, conforme foi especificado no comando `pppoeconf` (o default é `dsl-provider`), o host que será pingado e a frequência de execução do loop.
 
-Para completar, coloquei este script na inicialização. Primeiro é necessário criar um script shell e salvá-lo no diretório _/etc/init.d_ (usei [este artigo](http://articles.slicehost.com/2007/10/17/ubuntu-lts-adding-an-nginx-init-script) como modelo):
+Para completar, coloquei este script na inicialização. Primeiro é necessário criar um script shell e salvá-lo no diretório `/etc/init.d` (usei [este artigo](http://articles.slicehost.com/2007/10/17/ubuntu-lts-adding-an-nginx-init-script) como modelo):
 
 ```sh
 #! /bin/sh
@@ -118,7 +118,7 @@ esac
 exit 0
 ```
 
-Em seguida, dê permissão de execução ao script (salvei o arquivo com o nome _internetd_):
+Em seguida, dê permissão de execução ao script (salvei o arquivo com o nome `internetd`):
 
 ```sh
 sudo chmod +x /etc/init.d/internetd
@@ -138,7 +138,7 @@ Depois que atualizei o Ubuntu para 8.04 não tive mais esse problema, porém no 
 sudo /usr/sbin/update-rc.d -f internetd remove
 ```
 
-Em seguida, remova a interface PPP que foi criada pelo `pppoeconf` editando o arquivo _/etc/network/interfaces_ e removendo ou comentando as linhas correspondentes a essa interface. No meu caso, as linhas eram as seguintes:
+Em seguida, remova a interface PPP que foi criada pelo `pppoeconf` editando o arquivo `/etc/network/interfaces` e removendo ou comentando as linhas correspondentes a essa interface. No meu caso, as linhas eram as seguintes:
 
 ```sh
 auto dsl-provider

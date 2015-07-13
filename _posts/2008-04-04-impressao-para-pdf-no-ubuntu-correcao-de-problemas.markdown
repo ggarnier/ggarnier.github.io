@@ -14,14 +14,14 @@ O processo acima já foi descrito diversas vezes, em vários blogs e sites sobre
 Configurações
 -------------
 
-O arquivo de configuração do cups-pdf fica em _/etc/cups/cups-pdf.conf_. Neste arquivo, ficam definidos o diretório de destino dos PDFs, o diretório de spool, as regras para formação dos nomes de arquivos a partir do nome do documento impresso, configurações de segurança e permissões, o grupo de usuários que tem permissão para usar esta impressora, tipo de log, configurações do Ghostscript e outros. Se você alterar algum destes parâmetros, será necessário executar `sudo /etc/init.d/cupsys restart` para que as modificações tenham efeito.
+O arquivo de configuração do cups-pdf fica em `/etc/cups/cups-pdf.conf`. Neste arquivo, ficam definidos o diretório de destino dos PDFs, o diretório de spool, as regras para formação dos nomes de arquivos a partir do nome do documento impresso, configurações de segurança e permissões, o grupo de usuários que tem permissão para usar esta impressora, tipo de log, configurações do Ghostscript e outros. Se você alterar algum destes parâmetros, será necessário executar `sudo /etc/init.d/cupsys restart` para que as modificações tenham efeito.
 
 Problemas
 ---------
 
 Os [problemas mais comuns](https://bugs.launchpad.net/ubuntu/+source/cupsys/+bug/147551) com o cups-pdf são:
 
-- se após enviar um trabalho para a impressora o arquivo correspondente não aparecer no diretório PDF dentro do seu home (ou o diretório que você tiver definido no arquivo de configuração), verifique o log (por padrão fica em _/var/log/cups/cups-pdf_log_). Ele pode ajudar a descobrir o que ocorreu (ex: problemas de permissão)
-- verifique se o usuário está no grupo correspondente definido no arquivo de configuração (grupo lp por padrão)
-- se você alterar o diretório de destino dos PDFs, altere também o arquivo _/etc/apparmor.d/usr.sbin.cupsd_, na seção _/usr/lib/cups/backend/cups-pdf_. Este arquivo contém as regras de segurança do AppArmor, e define os diretórios onde o cups-pdf tem permissão de escrita. Após alterá-lo, execute `sudo /etc/init.d/cupsys restart`
+- se após enviar um trabalho para a impressora o arquivo correspondente não aparecer no diretório PDF dentro do seu home (ou o diretório que você tiver definido no arquivo de configuração), verifique o log (por padrão fica em `/var/log/cups/cups-pdf.log`). Ele pode ajudar a descobrir o que ocorreu (ex: problemas de permissão)
+- verifique se o usuário está no grupo correspondente definido no arquivo de configuração (grupo _lp_ por padrão)
+- se você alterar o diretório de destino dos PDFs, altere também o arquivo `/etc/apparmor.d/usr.sbin.cupsd`, na seção `/usr/lib/cups/backend/cups-pdf`. Este arquivo contém as regras de segurança do AppArmor, e define os diretórios onde o cups-pdf tem permissão de escrita. Após alterá-lo, execute `sudo /etc/init.d/cupsys restart`
 - se o log do cups-pdf apresentar a mensagem "[ERROR] failed to set file mode for PDF file (non fatal)", execute o comando `sudo aa-complain cupsd`

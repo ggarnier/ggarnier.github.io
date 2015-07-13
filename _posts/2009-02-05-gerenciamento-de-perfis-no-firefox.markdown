@@ -5,7 +5,7 @@ title: "Gerenciamento de perfis no Firefox"
 date: 2009-02-05
 categories: [Firefox, Internet, backup]
 ---
-Recentemente escrevi um post listando as [extensões do Firefox para desenvolvedores web que eu recomendo](http://blog.guilhermegarnier.com/2009/01/06/extensoes-do-firefox-recomendadas-para-desenvolvedores-web/). Outro dia, achei que o meu Firefox estava ficando muito lento. Quando fui verificar, percebi que eu tinha cerca de 30 extensões instaladas! Obviamente, quanto mais extensões instaladas, mais memória o browser utilizará.
+Recentemente escrevi um post listando as [extensões do Firefox para desenvolvedores web que eu recomendo]({% post_url 2009-01-06-extensoes-do-firefox-recomendadas-para-desenvolvedores-web %}). Outro dia, achei que o meu Firefox estava ficando muito lento. Quando fui verificar, percebi que eu tinha cerca de 30 extensões instaladas! Obviamente, quanto mais extensões instaladas, mais memória o browser utilizará.
 
 Uma dica útil para quem deseja utilizar muitas extensões, mas não tem necessidade de utilizar todas no mesmo momento, é utilizar diferentes perfis. Em cada perfil, você pode instalar extensões diferentes, ou alterar as configurações do browser e instalar temas. Ao executar o Firefox, você pode selecionar o perfil desejado. Para isso, utilize o [Profile Manager](http://kb.mozillazine.org/Profile_Manager). Basta executar o Firefox com a seguinte linha de comando:
 

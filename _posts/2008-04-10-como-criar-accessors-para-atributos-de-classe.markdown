@@ -5,7 +5,7 @@ title: "Como criar accessors para atributos de classe"
 date: 2008-04-10
 categories: [Ruby]
 ---
-Os métodos _attr\_reader_, _attr\_writer_ e _attr\_accessor_ do Ruby servem para simplificar a criação de setters e getters para atributos de instância. Ex:
+Os métodos `attr_reader`, `attr_writer` e `attr_accessor` do Ruby servem para simplificar a criação de setters e getters para atributos de instância. Ex:
 
 ```ruby
 class Teste
@@ -14,7 +14,7 @@ class Teste
 end
 ```
 
-No código acima, o método _attr\_accessor_ já cria o getter e o setter para o atributo valor:
+No código acima, o método `attr_accessor` já cria o getter e o setter para o atributo valor:
 
 ```ruby
 t = Teste.new
@@ -22,7 +22,7 @@ t.valor = 10
 puts t.valor #=> 10
 ```
 
-Porém, como fazer o mesmo para atributos de classe? Eu fiz [essa pergunta](http://forum.rubyonbr.org/forums/1/topics/2910) no [forum RubyOnBr](http://forum.rubyonbr.org). O Shairon Toledo me respondeu com o código do método _attr\_static\_accessor_, que é, na prática, o equivalente ao attr_accessor, só que para atributos de classe. Eu complementei o código dele com os métodos _attr\_static\_reader_ e _attr\_static\_writer_:
+Porém, como fazer o mesmo para atributos de classe? Eu fiz [essa pergunta](http://forum.rubyonbr.org/forums/1/topics/2910) no [forum RubyOnBr](http://forum.rubyonbr.org). O Shairon Toledo me respondeu com o código do método `attr_static_accessor`, que é, na prática, o equivalente ao `attr_accessor`, só que para atributos de classe. Eu complementei o código dele com os métodos `attr_static_reader` e `attr_static_writer`:
 
 ```ruby
 class Module

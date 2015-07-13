@@ -21,7 +21,7 @@ class Funcionario
 end
 ```
 
-Como esperado, cada instância da classe _Funcionario_ possui uma instância da variável _@salario_, e a variável _@@dias\_de\_ferias_ possui uma única instância:
+Como esperado, cada instância da classe `Funcionario` possui uma instância da variável `@salario`, e a variável `@@dias_de_ferias` possui uma única instância:
 
 ```ruby
 Funcionario.class_variable_get(:@@dias_de_ferias)  # 30
@@ -37,7 +37,7 @@ funcionario2.salario  # 2500
 
 Até aqui nada de novo. Porém, um tipo de variável menos conhecida e usada é a variável de _instância de classe_.
 
-Como tudo em Ruby é um objeto, todas as classes (tanto as classes padrão do Ruby quanto as criadas pelo usuário) são objetos - instâncias da classe _Class_:
+Como tudo em Ruby é um objeto, todas as classes (tanto as classes padrão do Ruby quanto as criadas pelo usuário) são objetos - instâncias da classe `Class`:
 
 ```ruby
 String.class  # Class
@@ -81,14 +81,14 @@ Gerente.class_variable_get(:@@dias_de_ferias)  # 45
 Funcionario.class_variable_get(:@@dias_de_ferias)  # 45
 ```
 
-No exemplo acima, a variável de classe _@@dias\_de\_ferias_ é compartilhada entre as classes _Funcionario_ e _Gerente_. Por isso, ao alterar o valor desta variável na subclasse, o valor na superclasse também mudou. Para confirmar que a instância é a mesma, basta verificar que o _object\_id_ da variável em ambas as classes:
+No exemplo acima, a variável de classe `@@dias_de_ferias` é compartilhada entre as classes `Funcionario` e `Gerente`. Por isso, ao alterar o valor desta variável na subclasse, o valor na superclasse também mudou. Para confirmar que a instância é a mesma, basta verificar que o `object_id` da variável em ambas as classes:
 
 ```ruby
 Funcionario.class_variable_get(:@@dias_de_ferias).object_id  # 70139308064800
 Gerente.class_variable_get(:@@dias_de_ferias).object_id  # 70139308064800
 ```
 
-No caso da variável de instância de classe _@bonus_, há uma instância para a classe _Funcionario_ e outra para a classe _Gerente_:
+No caso da variável de instância de classe `@bonus`, há uma instância para a classe `Funcionario` e outra para a classe `Gerente`:
 
 ```ruby
 Funcionario.instance_variable_get(:@bonus).object_id  # 70139307998300

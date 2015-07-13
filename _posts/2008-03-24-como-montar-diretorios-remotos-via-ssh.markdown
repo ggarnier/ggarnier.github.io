@@ -15,7 +15,7 @@ Apenas usuários deste grupo terão permissão para montar e desmontar diretóri
 
 `sudo sshfs user@server:/usr/local/test ./server-test`
 
-O comando acima mapeia o diretório _/usr/local/test_ do servidor _server_ no diretório local _./server-test_, como usuário remoto _user_. Há uma série de parâmetros opcionais, como forçar sincronização e cache. Verifique o man do comando para mais detalhes.
+O comando acima mapeia o diretório `/usr/local/test` do servidor `server` no diretório local `./server-test`, como usuário remoto `user`. Há uma série de parâmetros opcionais, como forçar sincronização e cache. Verifique o man do comando para mais detalhes.
 
 Para desmontar o diretório, basta executar:
 

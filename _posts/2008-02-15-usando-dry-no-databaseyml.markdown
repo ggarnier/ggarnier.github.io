@@ -7,9 +7,9 @@ categories: [Rails, Ruby, DRY]
 ---
 Um dos princípios do desenvolvimento em Rails é o DRY (don't repeat yourself). A idéia é que você nunca repita o código que já escreveu uma vez, procurando reaproveitar sempre que possível.
 
-No caso das views, por exemplo, isso é bem simples de implementar, através do uso de partials. Você deve criar um arquivo de view começando com "\_" (ex: _\_item.rhtml_) e usar o comando render em outra view para carregar o partial dentro do layout (ex: _render :partial => 'item'_).
+No caso das views, por exemplo, isso é bem simples de implementar, através do uso de partials. Você deve criar um arquivo de view começando com "\_" (ex: `_item.rhtml`) e usar o comando render em outra view para carregar o partial dentro do layout (ex: `render :partial => 'item'`).
 
-Outro dia descobri uma maneira muito interessante de usar essa técnica no arquivo _database.yml_. Esse arquivo mantém as configurações de banco de dados para cada um dos ambientes - _development_, _test_ e _production_. Porém, geralmente alguns destes parâmetros de configuração são iguais. O adapter, por exemplo, muito provavelmente é o mesmo; o username, senha e host também podem se repetir.
+Outro dia descobri uma maneira muito interessante de usar essa técnica no arquivo `database.yml`. Esse arquivo mantém as configurações de banco de dados para cada um dos ambientes - `development`, `test` e `production`. Porém, geralmente alguns destes parâmetros de configuração são iguais. O adapter, por exemplo, muito provavelmente é o mesmo; o username, senha e host também podem se repetir.
 
 Segue abaixo um exemplo de como definir estas configurações sem repetições:
 

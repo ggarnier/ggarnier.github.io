@@ -5,7 +5,7 @@ title: "Resumo do Dev in Rio 2010"
 date: 2010-10-29
 categories: [eventos, Dev in Rio, HTML 5, Javascript, Nodejs, refactoring, Ruby]
 ---
-No dia 09 de outubro aconteceu o [Dev in Rio 2010](http://www.devinrio.com.br/). Como [a edição de 2009 foi muito boa](http://blog.guilhermegarnier.com/2009/09/resumo-do-dev-in-rio/), a expectativa para a deste ano era alta. E foi correspondida! Desta vez foram duas salas com palestras acontecendo simultaneamente. Eu fiquei na sala 2, onde assisti às seguintes palestras:
+No dia 09 de outubro aconteceu o [Dev in Rio 2010](http://www.devinrio.com.br/). Como [a edição de 2009 foi muito boa]({% post_url 2009-09-29-resumo-do-dev-in-rio %}), a expectativa para a deste ano era alta. E foi correspondida! Desta vez foram duas salas com palestras acontecendo simultaneamente. Eu fiquei na sala 2, onde assisti às seguintes palestras:
 
 - HTML 5 e as novas JS APIs - [Leonardo Balter](http://yayquery.com.br/)
 

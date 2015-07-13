@@ -26,7 +26,7 @@ Quando comecei a ler o capítulo 5, que fala sobre [generics](http://java.sun.co
 private final stamps = ...;
 ```
 
-Não está faltando definir o tipo de _stamps_? Tudo bem, eu não devo ter entendido direito. Sigo a leitura e, um pouco mais à frente aparece o seguinte:
+Não está faltando definir o tipo de `stamps`? Tudo bem, eu não devo ter entendido direito. Sigo a leitura e, um pouco mais à frente aparece o seguinte:
 
 > Com os genéricos, você substituiria o comentário por uma declaração de tipo aperfeiçoada para a coleção que passaria ao compilador as informações que anteriormente ficariam ocultas no comentário:
 

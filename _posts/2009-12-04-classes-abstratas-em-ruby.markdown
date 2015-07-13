@@ -32,7 +32,7 @@ end
 
 Assim que li esse código, fiquei com uma pulga atrás da orelha. Ele mostra como um exemplo de classe abstrata uma classe que faz referência a métodos não definidos, explicando que seria necessário criar uma classe concreta estendendo esta classe e implementando os métodos necessários.
 
-Eu sempre pensei que classes abstratas fossem classes que não poderiam ser instanciadas, o que não é o caso do exemplo. É perfeitamente possível criar objetos da classe _AbstractKlass_. Só ocorrerá uma exceção se o método _welcome_ do objeto criado for executado:
+Eu sempre pensei que classes abstratas fossem classes que não poderiam ser instanciadas, o que não é o caso do exemplo. É perfeitamente possível criar objetos da classe `AbstractKlass`. Só ocorrerá uma exceção se o método `welcome` do objeto criado for executado:
 
 ```irb
 irb(main):006:0> obj = AbstractKlass.new
@@ -46,7 +46,7 @@ NameError: undefined local variable or method `hello' for #<AbstractKlass:0x37d4
 
 Resolvi levantar esta questão no forum do curso, e recebi uma resposta de um dos participantes dizendo que em Ruby o conceito de classes abstratas seria diferente daquele que apresentei acima. De acordo com a [definição da Wikipedia](http://en.wikipedia.org/wiki/Class_%28computer_science%29#Abstract_classes): "An abstract class, or abstract base class (ABC), is a class that cannot be instantiated".
 
-Pesquisando sobre o assunto, encontrei referências apresentando algumas sugestões de como implementar classes abstratas em Ruby de diferentes maneiras (herança, módulos e até um gem):
+Pesquisando sobre o assunto, encontrei referências apresentando algumas sugestões de como implementar classes abstratas em Ruby de diferentes maneiras (herança, módulos e até uma gem):
 
 - [How to implement an abstract class in ruby?](http://stackoverflow.com/questions/512466/how-to-implement-an-abstract-class-in-ruby)
 - [Abstract Classes, For Ruby: Abstraction](http://peeja.com/journal/2009/4/12/abstract-classes-for-ruby-abstraction.html)

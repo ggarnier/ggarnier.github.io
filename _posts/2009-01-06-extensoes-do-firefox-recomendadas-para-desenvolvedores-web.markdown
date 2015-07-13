@@ -29,7 +29,7 @@ Quase todo usuário de Firefox que tem um blog já postou uma lista de extensõe
 
 - [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/748)
 
-    Uma das extensões mais conhecidas, permite criar scripts usando Javascript para modificar o comportamento de sites específicos. O site [Userscripts.org](http://userscripts.org/) possui centenas de scripts pré-definidos para vários sites conhecidos. Com o Greasemonkey, você pode até mesmo [ajudar a Vivo a adicionar suporte a HTML no Firefox](http://blog.guilhermegarnier.com/2008/12/23/ajude-a-vivo-a-adicionar-suporte-a-html-no-firefox/).
+    Uma das extensões mais conhecidas, permite criar scripts usando Javascript para modificar o comportamento de sites específicos. O site [Userscripts.org](http://userscripts.org/) possui centenas de scripts pré-definidos para vários sites conhecidos. Com o Greasemonkey, você pode até mesmo [ajudar a Vivo a adicionar suporte a HTML no Firefox]({% post_url 2008-12-23-ajude-a-vivo-a-adicionar-suporte-a-html-no-firefox %}).
 
 - [Greasefire](https://addons.mozilla.org/en-US/firefox/addon/8352)
 

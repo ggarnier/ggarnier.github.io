@@ -14,11 +14,11 @@ Em função destas limitações, eu prefiro utilizar o [Remember the Milk](http:
 Integração com Google Calendar
 ------------------------------
 
-A integração é bem simples, através da interface iCalendar do Remember the Milk: vá até a opção "settings", aba "Info". Copie o link "iCalendar Events Service (All Lists)". Em seguida, vá ao Google Calendar, em "other calendars", à esquerda, há uma opção "Add by URL". Cole a URL que foi copiada do Remember the Milk, e será criado um novo calendário com as suas tarefas - obviamente só aparecerão as que tem data.
+A integração é bem simples, através da interface iCalendar do Remember the Milk: vá até a opção `settings`, aba `Info`. Copie o link `iCalendar Events Service (All Lists)`. Em seguida, vá ao Google Calendar, em `other calendars`, à esquerda, há uma opção `Add by URL`. Cole a URL que foi copiada do Remember the Milk, e será criado um novo calendário com as suas tarefas - obviamente só aparecerão as que tem data.
 
 Apesar de funcionar bem, a integração é limitada: a hora da tarefa não aparece, não há link direto para ver a tarefa no RTM, e é somente uma visualização, ou seja, não é possível editar, excluir ou concluir a tarefa a partir do Google Calendar. Além disso, quando uma tarefa é concluída, ela demora um tempo para sumir do calendário. Mas é possível configurar reminders para este calendário específico, o que torna a integração mais útil.
 
-O calendário criado exibe todas as tarefas do seu RTM que não estão concluídas e tem data. Outra possibilidade é criar calendários com listas específicas. Para isso, vá ao RTM, faça uma busca ou selecione uma lista ou smart list específica. No lado direito aparecerá uma opção "iCalendar (Events)". Copie esse link e repita o procedimento anterior no Google Calendar.
+O calendário criado exibe todas as tarefas do seu RTM que não estão concluídas e tem data. Outra possibilidade é criar calendários com listas específicas. Para isso, vá ao RTM, faça uma busca ou selecione uma lista ou smart list específica. No lado direito aparecerá uma opção `iCalendar (Events)`. Copie esse link e repita o procedimento anterior no Google Calendar.
 
 O RTM também disponibiliza dois [gadgets para Google Calendar](http://www.rememberthemilk.com/services/googlecalendar/):
 
