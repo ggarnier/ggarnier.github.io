@@ -3,12 +3,7 @@ title: Guilherme Garnier
 description: Desenvolvimento de software e Open Source
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: guilhermgarnier
-github_username: ggarnier
-permalink: /:year/:month/:title/
-
-# Build settings
-markdown: redcarpet
+avatar:
 
 # Default settings
 defaults:
@@ -17,3 +12,104 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+#
+# Icons
+#
+icons:
+  rss: true
+  email:
+  github: ggarnier
+  bitbucket:
+  twitter: guilhermgarnier
+  facebook:
+  google_plus:
+  tumblr:
+  behance:
+  dribbble:
+  flickr:
+  instagram:
+  linkedin:  # full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # full URL
+  steam:
+  wordpress:
+  youtube:
+
+#
+# Prettify url.
+#
+permalink: /:year/:month/:title/
+
+#
+# Scripts.
+#
+google_analytics: # e.g. UA-000000-01
+disqus: ggarnier
+
+#
+# Localizations.
+#
+str_next: Next
+str_prev: Prev
+str_read_more: Read more...
+str_search: Search
+str_recent_posts: Recent posts
+str_show_all_posts: Show all posts
+
+#
+# Recent posts.
+#
+recent_posts_num: 10
+
+#
+# Pagination.
+#
+paginate: 10
+paginate_path: page/:num
+
+#
+# Social.
+#
+share_buttons: false
+ogp:
+  image_url: http://qckanemoto.github.io/jekyll-qck-theme/assets/img/ogp.png
+  fb:
+    admin: # facebook admin id
+    app_id: # facebook application id
+
+#
+# Gems.
+#
+gems:
+  - jemoji
+
+#
+# Styles: see "_sass/base/_variables.scss"
+#
+
+#
+# !! Danger zone !!
+#
+
+include: ["_pages"]
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["autolink", "fenced_code_blocks", "strikethrough", "superscript", "with_toc_data", "tables", "footnotes", "no_intra_emphasis"]
+highlighter: pygments
+
+excerpt_separator: <!--more-->
+
+sass:
+  sass_dir: _sass
+  style: :compressed # or :expanded
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor
