@@ -72,9 +72,7 @@
     <aside class="site-aside">
         <div class="inner">
             <div class="block">
-                <form action="{{ site.baseurl }}/search">
-                    <input type="search" id="search" name="q" placeholder="{{ site.str_search }}" />
-                </form>
+                {% include search-form.html %}
             </div>
             <ul>
                 {% assign pages = (site.pages | sort: 'order') %}
