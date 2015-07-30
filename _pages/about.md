@@ -6,6 +6,6 @@ order: 1
 share: false
 ---
 
-[QckTheme](https://github.com/qckanemoto/jekyll-qck-theme) is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+I'm a software engineer and I'm passionate about programming. I've made a few talks in conferences around Brazil.
 
-Enjoy! :smiley:
+You can find me my on [Twitter](https://twitter.com/guilhermgarnier) or [Linkedin](https://www.linkedin.com/in/guilhermegarnier).
