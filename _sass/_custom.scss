@@ -7,3 +7,9 @@
   margin-top: 50px;
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  .adsense-sidebar, .adsense-post {
+    display: none;
+  }
+}
