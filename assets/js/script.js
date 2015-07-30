@@ -26,12 +26,6 @@ $(function () {
         $(this).wrap($a);
     });
 
-    // stick aside.
-    var topSpacing = $(".site-aside").css("padding-top").replace(/px/, "");
-    $(".site-aside .sticky").sticky({
-        topSpacing: parseInt(topSpacing)
-    });
-
     // social buttons.
     $(".share-buttons").each(function () {
         $(this).easySocialButtons({
