@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Vídeos com HTML 5 e a nova guerra dos browsers"
 date: 2010-02-22
-categories: [HTML 5, Firefox, Internet, videos]
+tags: [HTML 5, Firefox, Internet, videos]
 ---
 No final do século 20, a disputa entre os dois browsers mais populares da época, Netscape e Internet Explorer, ficou conhecida como [guerra dos browsers](http://pt.wikipedia.org/wiki/Guerra_dos_browsers). Nos últimos anos, após um período negro de domínio do IE, outros browsers começaram a crescer e recuperar o espaço que era ocupado pelo falecido Netscape.
 

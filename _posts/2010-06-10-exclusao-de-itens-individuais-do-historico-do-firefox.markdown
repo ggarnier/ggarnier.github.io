@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Exclusão de itens individuais do histórico do Firefox"
 date: 2010-06-10
-categories: [Firefox, Internet]
+tags: [Firefox, Internet]
 ---
 Outro dia, quando fui me logar no Gmail, digitei rapidamente meu login, apertei tab, digitei a senha e apertei enter. Na pressa, não percebi que, em vez de tab, eu tinha apertado shift. Ou seja, o campo login ficou preenchido como "loginsenha", e a senha ficou em branco. Até aí tudo bem, o Gmail simplesmente me deu um aviso de login ou senha inválidos. Porém, esse "loginsenha" ficou no histórico de preenchimento de campos, o que é bem incômodo, já que contém minha senha. Eu queria excluir este item do histórico, mas sem perder todo o histórico do browser.
 

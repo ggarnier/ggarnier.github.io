@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Instalação do Firefox 3.0 no Ubuntu"
 date: 2008-06-18
-categories: [Firefox, Ubuntu, Linux]
+tags: [Firefox, Ubuntu, Linux]
 ---
 Ontem foi lançada a versão final do Firefox 3.0. Porém, como esta versão ainda não está disponível nos respositórios oficiais do Ubuntu, resolvi fazer o download e a instalação manualmente. Por segurança, optei por manter instalada a versão 2, para o caso de encontrar algum problema, ou alguma extensão que considero essencial não funcionar.
 

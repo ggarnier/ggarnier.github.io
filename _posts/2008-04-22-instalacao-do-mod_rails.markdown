@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Instalação do mod_rails"
 date: 2008-04-22
-categories: [Rails, Phusion Passenger, Apache, deploy]
+tags: [Rails, Phusion Passenger, Apache, deploy]
 ---
 Recentemente foi lançado o Phusion Passenger, mais conhecido como [mod\_rails](http://www.modrails.com). Trata-se de um módulo Apache para Rails que promete oferecer configuração e deploy de aplicações mais simplificado do que com o Mongrel, além de ser mais estável e utilizar menos memória.
 

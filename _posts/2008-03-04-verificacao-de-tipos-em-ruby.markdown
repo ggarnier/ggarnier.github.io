@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Verificação de tipos em Ruby"
 date: 2008-03-04
-categories: [Ruby]
+tags: [Ruby]
 ---
 Uma das principais características do Ruby é ser uma linguagem dinâmica, o que significa que a tipagem é dinâmica, ou seja, a linguagem permite que uma variável seja usada sem ser previamente declarada, assuma um valor de uma classe qualquer e depois possa ter seu valor alterado para um objeto de outra classe.
 

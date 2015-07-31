@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Como montar diretórios remotos via ssh"
 date: 2008-03-24
-categories: [Linux, Ubuntu, ssh, fuse, mount, rede]
+tags: [Linux, Ubuntu, ssh, fuse, mount, rede]
 ---
 O sshfs é um comando muito útil para quem precisa acessar servidores (ou máquinas virtuais) remotos. Com este comando, em vez de precisarmos executar o ssh para logarmos ou o scp para copiarmos arquivos entre o desktop e os servidores, podemos montar localmente um diretório remoto.
 

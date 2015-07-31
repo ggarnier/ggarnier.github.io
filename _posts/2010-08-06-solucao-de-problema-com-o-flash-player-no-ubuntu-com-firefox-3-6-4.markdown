@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Solução de problema com o Flash Player no Ubuntu com Firefox >= 3.6.4"
 date: 2010-08-06
-categories: [Firefox, Flash, Ubuntu, Linux]
+tags: [Firefox, Flash, Ubuntu, Linux]
 ---
 Desde a versão 3.6.4, o Firefox possui um recurso chamado [Crash protection](https://wiki.mozilla.org/Firefox/Crash_Protection) (somente para Windows e Linux). Agora o browser cria um processo à parte chamado `plugin-container` para execução dos plugins do Flash, QuickTime e Silverlight. O objetivo é impedir que um erro na execução de um destes plugins trave o browser - caso isto ocorra, somente o plugin será interrompido.
 

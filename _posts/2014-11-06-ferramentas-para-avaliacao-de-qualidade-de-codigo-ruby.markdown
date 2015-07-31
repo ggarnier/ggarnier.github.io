@@ -3,7 +3,7 @@ layout: post
 title: "Ferramentas para avaliação de qualidade de código Ruby"
 date: 2014-11-06
 comments: true
-categories: [Ruby, Rails, Jenkins]
+tags: [Ruby, Rails, Jenkins]
 ---
 Ferramentas para avaliar a qualidade do seu código existem aos montes, para qualquer linguagem de programação. Eu já utilizei algumas para Java, mas nunca tinha testado nenhuma para Ruby, apesar de ser a linguagem que mais uso há alguns anos. Por isso, resolvi testar todas as ferramentas que pude encontrar. Separei a avaliação entre serviços e ferramentas.
 

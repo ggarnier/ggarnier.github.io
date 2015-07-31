@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Gerenciamento de perfis no Firefox"
 date: 2009-02-05
-categories: [Firefox, Internet, backup]
+tags: [Firefox, Internet, backup]
 ---
 Recentemente escrevi um post listando as [extensões do Firefox para desenvolvedores web que eu recomendo]({% post_url 2009-01-06-extensoes-do-firefox-recomendadas-para-desenvolvedores-web %}). Outro dia, achei que o meu Firefox estava ficando muito lento. Quando fui verificar, percebi que eu tinha cerca de 30 extensões instaladas! Obviamente, quanto mais extensões instaladas, mais memória o browser utilizará.
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Edição de PDF no OpenOffice 3.0"
 date: 2009-03-16
-categories: [OpenOffice, Open Source, PDF]
+tags: [OpenOffice, Open Source, PDF]
 ---
 Há muito tempo o [OpenOffice](http://www.openoffice.org/) oferece uma opção para exportação de documentos para o formato PDF. Apesar de ser muito útil, falta uma opção para importar esse formato para edição. Faltava! A extensão [PDF Import Extension](http://extensions.services.openoffice.org/project/pdfimport) da Sun faz exatamente isso: arquivos PDF podem ser importados e editados no OpenOffice Draw.
 

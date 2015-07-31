@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Aprendendo Ruby on Rails"
 date: 2008-02-12
-categories: [Ruby, Rails, tutorial]
+tags: [Ruby, Rails, tutorial]
 ---
 Atualmente, uma das tecnologias mais comentadas na web é o Ruby on Rails. Quando surgem estas novidades, eu costumo ficar com um pé atrás, pois muitas tecnologias que surgiram de repente e empolgaram muita gente sumiram tão rapidamente quanto apareceram.
 

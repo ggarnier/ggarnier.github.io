@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Ajude o Firefox a crescer com o Test Pilot"
 date: 2011-05-05
-categories: [Firefox, Open Source]
+tags: [Firefox, Open Source]
 ---
 A principal característica de projetos open source é que qualquer pessoa pode contribuir com eles. Geralmente quando falamos em contribuir com este tipo de projeto, logo pensamos em código fonte - corrigir um bug ou implementar uma melhoria. Mas na verdade podemos contribuir de várias formas (para mais informações sobre o modelo open source, recomendo a leitura do famoso artigo [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/homesteading/cathedral-bazaar/), de Eric Raymond), mesmo sem conhecimento técnico. Outra possibilidade é através de ajuda na documentação - melhorar uma documentação incompleta ou traduzir para outras línguas. Porém, apesar de não exigir conhecimentos específicos, exige tempo, o que nem sempre as pessoas têm disponível.
 

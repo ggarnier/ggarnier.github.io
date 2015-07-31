@@ -3,7 +3,7 @@ layout: post
 title: "Variáveis de classe e de instância de classe em Ruby"
 date: 2014-02-24
 comments: true
-categories: [Ruby]
+tags: [Ruby]
 ---
 Por ser uma linguagem orientada a objetos, Ruby possui variáveis de instância e de classe. As primeiras se referem a cada instância de uma determinada classe e as segundas à própria classe:
 

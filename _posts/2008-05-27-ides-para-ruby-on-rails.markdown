@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "IDEs para Ruby on Rails"
 date: 2008-05-27
-categories: [Ruby, Rails, IDE]
+tags: [Ruby, Rails, IDE]
 ---
 O uso de IDEs para desenvolvimento em Rails é um assunto bastante controverso. Devido às diversas facilidades no desenvolvimento com este framework, muitas pessoas afirmam que uma IDE não é necessária, basta um editor de textos simples e um terminal. Outros acreditam que, apesar do alto grau de automação do Rails, ainda é vantajoso usar uma IDE. No meio desta discussão, acredito que, no caso do Ruby on Rails, a escolha torna-se um gosto pessoal.
 

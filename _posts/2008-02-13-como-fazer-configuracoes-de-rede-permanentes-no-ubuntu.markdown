@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Como fazer configurações de rede permanentes no Ubuntu"
 date: 2008-02-13
-categories: [Ubuntu, Linux, rede]
+tags: [Ubuntu, Linux, rede]
 ---
 Um detalhe muito incômodo no Ubuntu é que as configurações de rede realizadas através da opção "Network" (no menu System -> Administration) não são permanentes. Qualquer alteração realizada no endereço IP, gateway, DNS ou domínios é perdida após um reboot. Se você editar as configurações de uma interface de rede via `ifconfig`, o mesmo problema ocorrerá. Não sei se isso é um bug ou uma característica desejada, mas eu acho muito inconveniente.
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Acessando múltiplos bancos de dados em Rails"
 date: 2008-03-11
-categories: [Rails, Ruby, Active Record]
+tags: [Rails, Ruby, Active Record]
 ---
 Esta semana me deparei com uma situação no projeto em Rails em que estou trabalhando, onde necessitei acessar um banco de dados de outra aplicação, para fazer algumas consultas simples. Eu poderia simplesmente fazer a conexão com o banco e as querys em SQL. Porém, eu obviamente queria aproveitar as facilidades que o Rails proporciona ao abstrair estes detalhes com a classe `ActiveRecord::Base`.
 

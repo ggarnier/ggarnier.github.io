@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Rails sem banco de dados"
 date: 2008-06-17
-categories: [Rails, Ruby, testes, Active Record]
+tags: [Rails, Ruby, testes, Active Record]
 ---
 O Active Record é um dos principais componentes do Rails, pois é exatamente o model do MVC. Ele mapeia automaticamente uma classe numa tabela do banco de dados, criando métodos para acesso a cada atributo. Porém, e se quisermos desenvolver uma aplicação sem banco de dados?
 

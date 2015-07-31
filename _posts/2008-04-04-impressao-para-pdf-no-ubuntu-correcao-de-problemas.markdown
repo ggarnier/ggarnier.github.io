@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Impressão para PDF no Ubuntu - correção de problemas"
 date: 2008-04-04
-categories: [Ubuntu, Linux, PDF]
+tags: [Ubuntu, Linux, PDF]
 ---
 Alguns programas no Ubuntu permitem a impressão para o formato PDF, como o Evince e o Gedit. Para ter essa opção disponível em qualquer programa, basta instalar uma impressora virtual de PDF, usando o pacote cups-pdf. Se ele não estiver instalado na sua distribuição, instale-o com o comando `sudo apt-get install cups-pdf`.
 

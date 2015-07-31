@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Problema com a extensão do Remember The Milk no Gmail"
 date: 2010-01-13
-categories: [Gmail, Remember the Milk, Firefox]
+tags: [Gmail, Remember the Milk, Firefox]
 ---
 Ontem meu Gmail começou a apresentar um problema estranho. Quando eu clicava nas tags, nas pastas de spam ou lixeira, ou tentava fazer uma pesquisa, nada acontecia. Porém, na caixa de entrada tudo funcionava perfeitamente.
 

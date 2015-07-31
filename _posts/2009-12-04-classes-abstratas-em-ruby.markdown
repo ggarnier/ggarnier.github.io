@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Classes abstratas em Ruby?"
 date: 2009-12-04
-categories: [Ruby, linguagens de programação, engenharia de software]
+tags: [Ruby, linguagens de programação, engenharia de software]
 ---
 Como eu estava há algum tempo sem mexer com Ruby, resolvi fazer o ótimo curso online gratuito [Core Ruby](http://www.rubylearning.org/class/), do [Satish Talim](http://satishtalim.com/) (também conhecido como [Indian Guru](http://twitter.com/IndianGuru)) para relembrar algumas coisas. Ao chegar no tópico [Ruby Overriding Methods](http://rubylearning.com/satishtalim/ruby_overriding_methods.html), há um item sobre classes abstratas, que diz o seguinte:
 

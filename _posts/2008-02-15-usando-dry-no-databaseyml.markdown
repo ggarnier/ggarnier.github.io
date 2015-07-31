@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Usando DRY no database.yml"
 date: 2008-02-15
-categories: [Rails, Ruby, DRY]
+tags: [Rails, Ruby, DRY]
 ---
 Um dos princípios do desenvolvimento em Rails é o DRY (don't repeat yourself). A idéia é que você nunca repita o código que já escreveu uma vez, procurando reaproveitar sempre que possível.
 

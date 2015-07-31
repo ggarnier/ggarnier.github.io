@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Definição de nomes de atributos \"humanizados\""
 date: 2008-04-17
-categories: [Ruby, Rails, Active Record]
+tags: [Ruby, Rails, Active Record]
 ---
 A classe `ActiveRecord::ConnectionAdapters::Column` tem um método `human_name` que cria uma versão "humanizada" para os nomes das colunas de tabelas (atributos de um model). Porém, nem sempre o nome criado é o que desejamos. Por exemplo, se temos uma coluna `num_usuarios`, o método `human_name` retornará "Num Usuarios", que, provavelmente, não é o que queremos. Para configurar o `human_name` manualmente, há duas soluções:
 

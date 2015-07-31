@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Ferramenta em Rails para criação de blogs"
 date: 2008-10-31
-categories: [Rails, Ruby, blog]
+tags: [Rails, Ruby, blog]
 ---
 Muitos tutoriais de Rails para iniciantes, para demonstrarem na prática como é rápido e simples criar aplicações web com ele, explicam como criar um blog em 15 minutos, baseados no [screencast do David Heinemeier Hansson](http://media.rubyonrails.org/video/rails_take2_with_sound.mov), criador do Rails, para o FISL 6.0. Apesar de ser uma aplicação funcional de blog, com opção para criar posts e adicionar comentários, é bastante limitado.
 

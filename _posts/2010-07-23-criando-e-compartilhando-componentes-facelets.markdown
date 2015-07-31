@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Criando e compartilhando componentes Facelets"
 date: 2010-07-23
-categories: [Java, JSF, Facelets]
+tags: [Java, JSF, Facelets]
 ---
 Atualmente estou trabalhando em alguns projetos que possuem diversas características em comum. Para facilitar o reaproveitamento de código, criamos um módulo à parte, uma espécie de framework, com todo o código comum aos projetos, e modularizamos os projetos usando [Maven](http://maven.apache.org/).
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Instant Rails, o ambiente Rails de bolso"
 date: 2009-06-18
-categories: [Rails, Ruby, Windows, Linux, portable apps]
+tags: [Rails, Ruby, Windows, Linux, portable apps]
 ---
 Com a proliferação dos pen drives com alguns GB de capacidade e a preços acessíveis, aplicativos que rodam sem necessitar de instalação tornaram-se igualmente populares. Estes aplicativos "portáteis", mais conhecidos como Portable Apps, podem ser executados diretamente do pen drive, geralmente com todas as funções dos equivalentes instaláveis. Eles são mais comuns em ambiente Windows (o site mais conhecido é o [PortableApps](http://portableapps.com/), mas existem outros, como o [The Portable Freeware Collection](http://www.portablefreeware.com/)), porém também existem [Portable Apps para Mac OS X](http://www.freesmug.org/portableapps/). Até onde eu sei, não existem Portable Apps para Linux, porém, é possível [executar os Portable Apps de Windows via Wine](http://www.linuxfortravelers.com/running-portable-apps-on-linux).
 

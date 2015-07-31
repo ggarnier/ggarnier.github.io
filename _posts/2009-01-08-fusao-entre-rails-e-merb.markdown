@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Fusão entre Rails e Merb"
 date: 2009-01-08
-categories: [Rails, Merb]
+tags: [Rails, Merb]
 ---
 Recentemente, a equipe de desenvolvimento do Rails, que vem trabalhando na versão 3 do framework, divulgou o [merge do Rails com o Merb](http://weblog.rubyonrails.org/2008/12/23/merb-gets-merged-into-rails-3), outro framework Ruby bastante interessante, que até há pouco tempo, era visto como concorrente do Rails. A fusão já deve ocorrer na versão 3 do Rails. Muitos comentários que eu tenho lido sobre esta notícia foram bastante positivos, já que deve conciliar as melhores características de cada um.
 

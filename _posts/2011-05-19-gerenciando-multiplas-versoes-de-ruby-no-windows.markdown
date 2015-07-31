@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Gerenciando múltiplas versões de Ruby no Windows"
 date: 2011-05-19
-categories: [Ruby, JRuby, Pik, RVM, Windows]
+tags: [Ruby, JRuby, Pik, RVM, Windows]
 ---
 O [RVM](https://rvm.io/) já se tornou a opção padrão para gerenciar múltiplas versões de Ruby. Ele permite instalar várias versões, alternar entre elas, instalar gems em cada versão independentemente... mas não funciona em ambiente Windows. Eu sei que este não é um ambiente muito popular para desenvolvimento Ruby, mas existem usuários de Windows (seja por opção ou por obrigação) programando em Ruby. Para estes, uma alternativa ao RVM é o [Pik](https://github.com/vertiginous/pik).
 
