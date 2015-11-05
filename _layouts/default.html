@@ -83,6 +83,9 @@
                 <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %}
                 {% endfor %}
+
+                <li><a class="page-link" href="{{ '/search/?t=portuguese' | prepend: site.baseurl }}">Posts em português</a></li>
+                <li><a class="page-link" href="{{ '/search/?t=english' | prepend: site.baseurl }}">Posts in english</a></li>
             </ul>
             <ul class="icons">
                 {% include icons.html icons=site.icons %}
