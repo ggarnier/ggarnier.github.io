@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Integrando o Remember the Milk ao Google Calendar e Gmail"
 date: 2011-09-21
-tags: [Gmail, Google Calendar, Remember the Milk]
+tags: [Gmail, Google Calendar, Remember the Milk, portuguese]
 ---
 O [Google Calendar](http://calendar.google.com) é uma excelente ferramenta para manter o controle de compromissos pendentes. Porém, tem dois problemas: é limitado a tarefas que tenham uma data específica e não dependem do usuário concluir, ou seja, uma tarefa que foi programada para ontem mas não foi realizada não aparecerá mais no meu calendário (ou melhor, aparecerá no dia em que estava prevista, e provavelmente será esquecida com o tempo). Isso acontece porque o Google Calendar não é uma ferramenta voltada para tarefas, e sim para eventos. Para realizar o controle de tarefas, o melhor é utilizar uma ferramenta específica para tal. Idealmente uma que seja integrável ao Google Calendar, pois este continua sendo uma excelente ferramenta para controle de eventos (visualizar eventos futuros, compartilhar com outras pessoas, etc).
 

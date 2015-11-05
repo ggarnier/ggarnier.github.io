@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Ubuntu Netbook Remix no HP Mini"
 date: 2010-12-20
-tags: [Ubuntu, Linux, netbook]
+tags: [Ubuntu, Linux, netbook, portuguese]
 ---
 Outro dia um amigo me pediu para instalar o Ubuntu no netbook dele, um HP Mini (não lembro exatamente qual modelo). Baixei o [Ubuntu Netbook Remix 10.10](http://www.ubuntu.com/netbook) e instalei no pen drive, seguindo as instruções que aparecem na [página de download](http://www.ubuntu.com/netbook/get-ubuntu/download). Em seguida, fiz o boot pelo pen drive e iniciei a instalação. Tudo ia bem até que em determinado momento recebi uma mensagem de erro. Não lembro qual era a mensagem, mas parecia ser algo relacionado a disco. Tentei novamente e o erro se repetiu.
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Minha palestra no FISL 14 - Design Patterns em Ruby"
 date: 2013-07-09
-tags: [Ruby, FISL, palestras, design patterns, eventos, engenharia de software]
+tags: [Ruby, FISL, palestras, design patterns, eventos, engenharia de software, portuguese]
 ---
 Na última semana aconteceu a última edição do [FISL](http://softwarelivre.org/fisl14), o Fórum Internacional de Software Livre. No segundo dia do evento, fiz uma palestra sobre Design Patterns em Ruby, a qual foi baseada [neste post]({% post_url 2013-04-02-design-patterns-em-ruby-decorators-presenters-e-exhibits %}). Todas as palestras do evento foram transmitidas ao vivo, e [os vídeos já estão disponíveis](http://fisl.org.br/14/papers_ng/public/fast_grid?event_id=3).
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Nunca use o método Date.getYear() do Javascript"
 date: 2010-01-29
-tags: [Javascript, JSF, Opera, browsers, Tomahawk]
+tags: [Javascript, JSF, Opera, browsers, Tomahawk, portuguese]
 ---
 Até a década de 1990, era muito comum escrevermos datas com apenas 2 dígitos representando o ano (ex: 1996 -> 96). Como todos já sabem, esta prática levou ao famoso [bug do milênio](http://pt.wikipedia.org/wiki/Problema_do_ano_2000), pois, desta forma, o ano 2000 tornava-se 0 (ou 100, dependendo do caso), gerando uma série de problemas, especialmente em códigos que calculavam um período entre duas datas. Felizmente, hoje em dia não temos mais esta preocupação. Ou temos?
 

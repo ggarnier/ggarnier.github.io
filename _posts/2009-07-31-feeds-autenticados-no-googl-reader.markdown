@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Feeds autenticados no Google Reader"
 date: 2009-07-31
-tags: [Google Reader, feed, Internet]
+tags: [Google Reader, feed, Internet, portuguese]
 ---
 Há muito tempo eu uso o [Google Reader](http://www.google.com.br/reader/) como leitor de feeds. A principal vantagem sobre as demais alternativas para desktop é o fato de não necessitar de instalação, podendo ser acessado diretamente pelo browser.
 

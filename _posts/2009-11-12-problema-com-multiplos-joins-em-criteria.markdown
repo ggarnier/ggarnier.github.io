@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Problema com múltiplos joins em Criteria"
 date: 2009-11-12
-tags: [Java, Hibernate, Criteria]
+tags: [Java, Hibernate, Criteria, portuguese]
 ---
 O [Criteria](https://www.hibernate.org/hib_docs/v3/api/org/hibernate/Criteria.html) é uma API do [Hibernate](https://www.hibernate.org/) que facilita muito quando precisamos montar uma query complexa com filtros opcionais. Adicionar restrições ou criar joins com esta API é muito mais simples de gerenciar do que concatenando Strings, como faríamos ao trabalhar com SQL puro.
 

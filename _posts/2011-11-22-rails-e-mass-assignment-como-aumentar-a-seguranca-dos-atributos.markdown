@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Rails e mass assignment: como aumentar a segurança dos atributos"
 date: 2011-11-22
-tags: [Ruby, Rails, mass assignment, segurança, Active Model, Active Record]
+tags: [Ruby, Rails, mass assignment, segurança, Active Model, Active Record, portuguese]
 ---
 Ao utilizar o scaffold do Rails, ele criará todos os métodos necessários no controller. Depois que o usuário preenche os dados do formulário e envia, é executado o método create do controller. Este método faz algo semelhante ao código abaixo (no exemplo é um CRUD de usuário):
 

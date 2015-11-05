@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Tradução no Google Talk"
 date: 2008-10-05
-tags: [Google, Internet]
+tags: [Google, Internet, portuguese]
 ---
 Um recurso interessante do [Google Talk](http://www.google.com/talk/), mas pouco divulgado, são os bots de tradução de textos para diversas línguas. O [Google Translate](http://translate.google.com) também faz isso, de uma forma mais limitada, mas para a tradução rápida de um texto pequeno, esse recurso pode ser bem útil.
 

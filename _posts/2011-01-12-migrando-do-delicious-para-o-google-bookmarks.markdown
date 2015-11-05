@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Migrando do Delicious para o Google Bookmarks"
 date: 2011-01-12
-tags: [Delicious, Google, Firefox, Bookmarks, Chrome]
+tags: [Delicious, Google, Firefox, Bookmarks, Chrome, portuguese]
 ---
 Alguns anos atrás, comecei a sentir necessidade de manter meus bookmarks sincronizados entre os diversos computadores que eu utilizava. Até que conheci o [Delicious](http://www.delicious.com). Isso foi em 2007, e desde então eu comecei a usá-lo constantemente. Cada vez que eu usava o Firefox em algum computador pela primeira vez, a primeira extensão que eu instalava era [a do Delicious](https://addons.mozilla.org/en-US/firefox/addon/3615/). Através desta extensão, um simples Control+D abre a janela para adicionar a página atual ao seus bookmarks do Delicious, e Control+B abre a barra lateral com seus bookmarks, organizados por tags.
 

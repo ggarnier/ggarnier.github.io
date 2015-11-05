@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Sprites automáticos com Compass"
 date: 2012-07-26
-tags: [Ruby, Rails, CSS, SASS, sprites, Compass]
+tags: [Ruby, Rails, CSS, SASS, sprites, Compass, portuguese]
 ---
 Um dos temas mais atuais no desenvolvimento web é a [otimização de sites](http://blog.caelum.com.br/por-uma-web-mais-rapida-26-tecnicas-de-otimizacao-de-sites/). A motivação para reduzir o tempo de carregamento das páginas vem não só de estudos que mostram que [quando maior o tempo de carregamento, maior o número de usuários que abandonam o site](http://www.webperformancetoday.com/2010/06/15/everything-you-wanted-to-know-about-web-performance/), mas também do fato de que [o Google considera o tempo de resposta na criação do PageRank](http://googlewebmastercentral.blogspot.com.br/2010/04/using-site-speed-in-web-search-ranking.html).
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Tutoriais de JSF"
 date: 2009-05-25
-tags: [JSF, Java, tutorial]
+tags: [JSF, Java, tutorial, portuguese]
 ---
 Uma das maiores dificuldades para se aprender JSF é seu aparentemente complexo ciclo de vida, composto por 6 fases. Ao debugar uma aplicação JSF, percebe-se que alguns métodos dos Managed Beans são executados várias vezes, uma em cada fase, o que não é muito intuitivo, principalmente quando se está acostumado com outros frameworks web que utilizam abordagens bem diferentes.
 

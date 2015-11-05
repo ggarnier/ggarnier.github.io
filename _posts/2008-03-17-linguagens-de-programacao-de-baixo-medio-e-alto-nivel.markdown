@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Linguagens de programação de baixo, médio e alto nível"
 date: 2008-03-17
-tags: [linguagens de programação]
+tags: [linguagens de programação, portuguese]
 ---
 O excelente blog Code Commit [publicou um artigo interessante](http://www.codecommit.com/blog/java/defining-high-mid-and-low-level-languages) sobre linguagens de programação: como podemos definir se uma linguagem é de baixo, médio ou alto nível?
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Livros técnicos traduzidos nunca mais"
 date: 2009-07-16
-tags: [Java, livros, engenharia de software]
+tags: [Java, livros, engenharia de software, portuguese]
 ---
 Há alguns meses atrás, eu estava interessado no livro [Effective Java, segunda edição](http://java.sun.com/docs/books/effective/). A princípio, eu pretendia comprar na [Amazon](http://www.amazon.com/Effective-Java-Edition-Joshua-Bloch/dp/0321356683/ref=sr_1_1?ie=UTF8&qid=1387404215&sr=8-1&keywords=effective+java), mas decidi pesquisar antes. Pela internet, não achei o livro mais barato em nenhum lugar, mas acabei encontrando em uma livraria perto do trabalho por um precinho camarada. Só tinha um problema: era a [edição traduzida em português](http://altabooks.tempsite.ws/product_info.php?products_id=266&amp;osCsid=utme24t86q4r7au590cfrts1n4).
 

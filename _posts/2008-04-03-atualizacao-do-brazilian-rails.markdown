@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Atualização do Brazilian Rails"
 date: 2008-04-03
-tags: [Rails, Ruby]
+tags: [Rails, Ruby, portuguese]
 ---
 Quem já tentou tratar caracteres acentuados em Ruby deve ter percebido que a linguagem não considera estes caracteres como letras. Métodos como `upcase` e `downcase` são "locale insensitive", como diz a descrição destes métodos no [manual do Ruby](http://www.ruby-doc.org/core/):
 

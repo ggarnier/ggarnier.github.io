@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "Primeiro post!"
 date: 2008-02-07
+tags: [portuguese]
 ---
 Seja bem-vindo ao meu blog!
 

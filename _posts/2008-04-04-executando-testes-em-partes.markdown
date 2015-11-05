@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Executando testes em partes"
 date: 2008-04-04
-tags: [Ruby, Rails, testes]
+tags: [Ruby, Rails, testes, portuguese]
 ---
 A execução de testes em Rails é feita, normalmente, com o comando `rake test`. Este comando executa automaticamente todos os testes unitários e funcionais. Porém, algumas vezes queremos executar apenas uma parte dos testes, seja porque sabemos que outra parte do sistema está dando algum erro que pretendemos tratar depois, seja porque acabamos de alterar um trecho do código (ou dos testes) e queremos verificar se estes estão OK.
 

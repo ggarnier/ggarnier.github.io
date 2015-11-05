@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Resumo do Dev in Rio"
 date: 2009-09-29
-tags: [eventos, Dev in Rio, Java, Rails, Django, desenvolvimento ágil]
+tags: [eventos, Dev in Rio, Java, Rails, Django, desenvolvimento ágil, portuguese]
 ---
 No último dia 14 aconteceu o [Dev in Rio]({% post_url 2009-08-27-dev-in-rio-eu-vou %}) (veja [vídeos e fotos do evento](http://gc.blog.br/2009/09/16/dev-in-rio-2009-fotos-e-videos-do-evento/)). Organizado pelo [Guilherme Chapiewski](http://gc.blog.br/) e pelo [Henrique Bastos](http://www.henriquebastos.net/), o evento foi um grande sucesso.
 

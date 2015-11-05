@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Desenvolvedores e plataformas poliglotas"
 date: 2009-09-11
-tags: [linguagens de programação, engenharia de software]
+tags: [linguagens de programação, engenharia de software, portuguese]
 ---
 Há alguns anos, era muito comum encontrarmos desenvolvedores que conheciam somente uma linguagem, e por isso intitulavam-se "desenvolvedor Java", "desenvolvedor Delphi", "desenvolvedor ASP", ou qualquer outra linguagem. Eram pessoas que conheciam uma, e somente uma, linguagem de programação, e a defendiam com unhas e dentes em qualquer discussão nos fóruns, frequentemente gerando [flame wars](http://en.wikipedia.org/wiki/Flame_war).
 

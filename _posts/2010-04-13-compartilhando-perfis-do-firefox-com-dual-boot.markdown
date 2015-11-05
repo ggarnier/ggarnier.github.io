@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Compartilhando perfis do Firefox com dual boot"
 date: 2010-04-13
-tags: [Firefox, Linux, Windows]
+tags: [Firefox, Linux, Windows, portuguese]
 ---
 Muitos usuários de Linux têm dual boot com uma instalação de Windows, geralmente para executar alguma aplicação específica, como jogos mais recentes ou o iTunes (apesar de que o [Ubuntu 10.04 deve suportar iPod e iPhone](http://www.webupd8.org/2010/02/confirmed-ubuntu-1004-supports-iphone.html)).
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Como criar accessors para atributos de classe"
 date: 2008-04-10
-tags: [Ruby]
+tags: [Ruby, portuguese]
 ---
 Os métodos `attr_reader`, `attr_writer` e `attr_accessor` do Ruby servem para simplificar a criação de setters e getters para atributos de instância. Ex:
 

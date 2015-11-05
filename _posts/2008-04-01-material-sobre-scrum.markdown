@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Material sobre Scrum"
 date: 2008-04-01
-tags: [Scrum, desenvolvimento ágil, Globo.com]
+tags: [Scrum, desenvolvimento ágil, Globo.com, portuguese]
 ---
 Aqui na [Globo.com](http://globo.com) adotamos Scrum em (quase) todos os projetos. Quando cheguei aqui eu não conhecia praticamente nada sobre Scrum, e precisei aprender sobre o assunto para não ficar perdido.
 

@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Renderização condicional com JSF"
 date: 2010-04-29
-tags: [Java, JSF, Tomahawk]
+tags: [Java, JSF, Tomahawk, portuguese]
 ---
 Muitos componentes [JSF](http://java.sun.com/javaee/javaserverfaces/), como os do [Tomahawk](http://myfaces.apache.org/tomahawk/index.html), por exemplo, possuem o atributo `rendered`. Este atributo, como diz o nome, indica se o componente será renderizado ou não. No valor deste atributo, é possível utilizar expressões [JSF EL](http://developers.sun.com/docs/jscreator/help/jsp-jsfel/jsf_expression_language_intro.html); desta forma, a lógica que indicará se o elemento será exibido ou não pode (e deve) ser transferida para um Managed Bean. Isso permite que evitemos colocar muita lógica nos XHTMLs, deixando-os mais limpos e organizados.
 

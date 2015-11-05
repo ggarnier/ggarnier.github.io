@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Configurações fora do padrão em Rails, parte 2 - Relacionamentos HABTM"
 date: 2008-04-10
-tags: [Rails, Ruby, Active Record, testes]
+tags: [Rails, Ruby, Active Record, testes, portuguese]
 ---
 Há um mês escrevi um post sobre [configurações fora do padrão em Rails]({% post_url 2008-03-18-configuracoes-fora-do-padrao-em-rails %}), onde descrevi como executar testes com models cujas tabelas não existem no banco de dados local, e sim em uma base externa. Porém, depois de postar, verifiquei que há um outro problema não resolvido com a configuração que descrevi nesse post: relacionamentos HABTM (has and belongs to many).
 

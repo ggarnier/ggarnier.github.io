@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Representação de data e hora em Ruby 1.8.7 e 1.9"
 date: 2011-03-01
-tags: [Ruby, JRuby]
+tags: [Ruby, JRuby, portuguese]
 ---
 A classe [Time](http://www.ruby-doc.org/core/classes/Time.html) do Ruby é usada, como esperado, para representar uma data e hora. Existem várias formas de criar uma nova instância, a mais óbvia é usando `Time.new` (ou `Time.now`), que cria uma nova instância com a data e hora atuais:
 

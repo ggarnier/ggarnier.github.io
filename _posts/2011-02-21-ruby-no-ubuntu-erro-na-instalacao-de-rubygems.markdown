@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Ruby no Ubuntu - erro na instalação de Rubygems"
 date: 2011-02-21
-tags: [Ruby, Rubygems, Linux, Ubuntu]
+tags: [Ruby, Rubygems, Linux, Ubuntu, portuguese]
 ---
 Dica rápida de Ruby: se ao tentar instalar uma [Rubygem](http://rubygems.org) no Ubuntu você receber uma mensagem como essa:
 

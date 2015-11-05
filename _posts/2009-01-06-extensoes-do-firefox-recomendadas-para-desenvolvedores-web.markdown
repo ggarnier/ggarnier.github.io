@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Extensões do Firefox recomendadas para desenvolvedores web"
 date: 2009-01-06
-tags: [Firefox, debug, CSS, Internet, Javascript, Greasemonkey, Firebug]
+tags: [Firefox, debug, CSS, Internet, Javascript, Greasemonkey, Firebug, portuguese]
 ---
 Quase todo usuário de Firefox que tem um blog já postou uma lista de extensões recomendadas. Chegou a minha vez! Sei que muitas aqui já são velhas conhecidas da maioria, mas acho interessante ressaltar a importância. Hoje em dia é difícil imaginar o desenvolvimento web sem o auxílio do Firefox. Segue abaixo a lista de extensões que eu recomendo:
 
