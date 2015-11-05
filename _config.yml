@@ -1,6 +1,6 @@
 # Site settings
 title: Guilherme Garnier
-description: Desenvolvimento de software e Open Source
+description: My random thoughts on software
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.guilhermegarnier.com" # the base hostname & protocol for your site
 avatar:
