@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Scrum e comprometimento"
 date: 2009-04-29
-tags: [Scrum, desenvolvimento ágil, Globo.com, portuguese]
+tags: [Scrum, agile, Globo.com, portuguese]
 ---
 No ano passado trabalhei na [Globo.com](http://globo.com/), e lá tive algumas oportunidades de trabalhar com [Scrum](http://pt.wikipedia.org/wiki/Scrum) (aliás, para quem ainda não leu, recomendo o post do [Guilherme Chapiewski](http://gc.blog.br/) sobre [a adoção de Scrum na Globo.com](http://gc.blog.br/2008/05/27/como-estamos-indo-com-a-adocao-de-scrum-na-globocom/)). Eu pretendia escrever sobre isso há algum tempo, mas a [procrastinação](http://pt.wikipedia.org/wiki/Procrastina%C3%A7%C3%A3o) me impedia de transformar um rascunho antigo neste post.
 

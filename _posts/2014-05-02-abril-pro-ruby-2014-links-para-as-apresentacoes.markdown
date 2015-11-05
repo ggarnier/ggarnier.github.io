@@ -3,7 +3,7 @@ layout: post
 title: "Abril Pro Ruby 2014: links para as apresentações"
 date: 2014-05-02
 comments: true
-tags: [Ruby, eventos, palestras, portuguese]
+tags: [Ruby, events, talks, portuguese]
 ---
 Na última semana aconteceu o evento [Abril Pro Ruby 2014](http://abrilproruby.com/), em Porto de Galinhas. O evento foi excelente, muito bem organizado e com várias palestras e workshops de excelente nível técnico.
 

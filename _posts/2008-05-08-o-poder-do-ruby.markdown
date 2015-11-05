@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "O poder do Ruby"
 date: 2008-05-08
-tags: [Ruby, linguagens de programação, algoritmos, portuguese]
+tags: [Ruby, programming languages, algorithms, portuguese]
 ---
 Muito se fala das vantagens do Ruby sobre muitas das linguagens atuais, por ser uma [linguagem de altíssimo nível](http://darynholmes.wordpress.com/2008/04/07/very-high-level-language-%E2%80%93-so-what/). Mas muitas vezes não percebemos grandes diferenças entre as linguagens, além das usuais diferenças de sintaxe - se as linhas de comando precisam de ponto-e-vírgula no final, se as variáveis precisam de $ no início do nome, se estas são tipadas ou não, se precisam ser declaradas ou não, etc. Porém, em algumas situações específicas, enxergamos o verdadeiro poder do Ruby.
 

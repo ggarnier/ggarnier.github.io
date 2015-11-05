@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Script para verificar o status da conexão PPPoE"
 date: 2008-11-24
-tags: [Ubuntu, Linux, Internet, rede, PPPoE, scripts, Shell, portuguese]
+tags: [Ubuntu, Linux, Internet, networks, PPPoE, scripts, Shell, portuguese]
 ---
 No meu computador pessoal, o acesso a Internet é através de um link de rádio. A autenticação no provedor utiliza PPPoE. Para configurar a autenticação no Windows XP, basta usar o cliente PPPoE que vem por padrão. No Ubuntu também é muito simples, basta executar o comando `pppoeconf`, e seguir os passos de configuração. Na maioria das perguntas só precisei selecionar a opção default. Fora isso, são solicitados username e senha do provedor. Ao término da configuração, a interface PPP já está configurada, e é ativada automaticamente na inicialização.
 

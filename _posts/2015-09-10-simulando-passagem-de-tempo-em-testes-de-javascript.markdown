@@ -3,7 +3,7 @@ layout: post
 title: "Simulando passagem de tempo em testes de Javascript"
 date: 2015-09-10
 comments: true
-tags: [Javascript, testes, Jasmine, portuguese]
+tags: [Javascript, tests, Jasmine, portuguese]
 ---
 O [Jasmine](http://jasmine.github.io/) é uma das ferramentas de teste para Javascript mais usadas atualmente. A sintaxe estilo BDD lembra bastante o [RSpec](http://rspec.info/), o que facilita a vida de quem já tem experiência com este.
 

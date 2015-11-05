@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Configurações fora do padrão em Rails"
 date: 2008-03-18
-tags: [Rails, Ruby, Active Record, testes, portuguese]
+tags: [Rails, Ruby, Active Record, tests, portuguese]
 ---
 O framework Rails é excelente na tarefa de automatizar o máximo possível o desenvolvimento de aplicações web. Todos os detalhes que podem ser implementados automaticamente são abstraídos do desenvolvedor, facilitando e agilizando muito o trabalho.
 

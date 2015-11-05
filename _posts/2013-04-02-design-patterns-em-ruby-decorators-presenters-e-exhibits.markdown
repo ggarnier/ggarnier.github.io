@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Design patterns em Ruby - Decorators, Presenters e Exhibits"
 date: 2013-04-02
-tags: [Ruby, design patterns, Rails, engenharia de software, portuguese]
+tags: [Ruby, design patterns, Rails, software engineering, portuguese]
 ---
 Ao criar um novo projeto Rails, o generator cria uma estrutura padrão de diretórios. Dentro de `app`, ele cria os diretórios `models`, `controllers`, `views` e `helpers`. Os três primeiros tem papéis bem definidos, mas mesmo assim há uma certa confusão quando surge algum arquivo "fora do padrão".
 
