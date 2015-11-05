@@ -1,9 +1,13 @@
-# Site settings
+#
+# Basic settings.
+#
+#baseurl: http://localhost:4000
+#baseurl: http://qckanemoto.github.io
+baseurl: http://blog.guilhermegarnier.com
 title: Guilherme Garnier
 description: My random thoughts on software
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.guilhermegarnier.com" # the base hostname & protocol for your site
 avatar:
+language: en
 
 # Default settings
 defaults:
