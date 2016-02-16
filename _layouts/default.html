@@ -31,7 +31,7 @@
 
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image:url" content="{{ ogp_image_url }}" />
+    <meta property="og:image" content="{{ ogp_image_url }}" />
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="fb:admins" content="{{ site.ogp.fb.admin }}" />
@@ -45,7 +45,6 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
 
-    <link href="{{ '/assets/lib/easy-social-buttons/jquery.easy-social-buttons.css' | prepend: site.baseurl }}" rel="stylesheet">
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
 </head>
 <body>
@@ -84,7 +83,7 @@
                 {% endif %}
                 {% endfor %}
 
-                <li><a class="page-link" href="{{ '/search/?t=portuguese' | prepend: site.baseurl }}">Posts em português</a></li>
+                <li><a class="page-link" href="{{ '/search/?t=portuguese' | prepend: site.baseurl }}">Posts em portugues</a></li>
                 <li><a class="page-link" href="{{ '/search/?t=english' | prepend: site.baseurl }}">Posts in english</a></li>
             </ul>
             <ul class="icons">
@@ -115,8 +114,6 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="{{ '/assets/lib/easy-social-buttons/jquery.social-info.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/lib/easy-social-buttons/jquery.easy-social-buttons.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
 
 {% if page.id %}
@@ -127,6 +124,7 @@
 <script src="{{ '/assets/js/search.js' | prepend: site.baseurl }}"></script>
 {% endif %}
 
+{% include fb-root.html %}
 {% include google-analytics.html %}
 
 </body>

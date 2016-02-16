@@ -25,14 +25,4 @@ $(function () {
         var $a = $("<a>").attr("href", imgUrl).attr("target", "_blank");
         $(this).wrap($a);
     });
-
-    // social buttons.
-    $(".share-buttons").each(function () {
-        $(this).easySocialButtons({
-            url: $(this).data("url"),
-            pageTitle: $(this).data("title"),
-            orders: ["twitter", "facebook", "googleplus"],
-            waitCounter: '<span>Wait...</span>'
-        });
-    });
 });
