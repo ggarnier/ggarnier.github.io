@@ -13,11 +13,11 @@ O `<t:htmlTag>` possui um atributo `value` que define a tag HTML que será rende
 
 Atenção: o atributo `value` é obrigatório; se você omití-lo, o componente não funcionará! Para que ele não gere nenhuma tag, é necessário definir `value=""`, como no exemplo abaixo:
 
-{% highlight html %}
+```html
 <t:htmlTag rendered="#{tipo.exibeDescricao}" value="">
     <div id="divDescricao_#{tipo.id}">
         <h:outputText value=" #{messages.descricao}" />
         <h:inputTextarea styleClass="inputAreaTexto" id="descricao" value="#{descricaoTipo}" />
     </div>
 </t:htmlTag>
-{% endhighlight %}
+```

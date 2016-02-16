@@ -14,7 +14,7 @@ Uma das dificuldades ao realizar testes de Javascript é como simular a passagem
 
 O primeiro caso pode ser ilustrado com este exemplo básico:
 
-{% highlight html %}
+```html
   <button id="button">Show Menu</button>
   <div id="menu" style="display: none">Menu</div>
 
@@ -27,11 +27,11 @@ O primeiro caso pode ser ilustrado com este exemplo básico:
 
     example();
   </script>
-{% endhighlight %}
+```
 
 Um clique no botão faz com que o menu apareça usando a função [jQuery.fadeIn](http://api.jquery.com/fadein/). O teste para este código, a princípio, poderia ser algo assim:
 
-{% highlight javascript %}
+```javascript
 describe("example test", function() {
   beforeEach(function() {
     example();
@@ -43,13 +43,13 @@ describe("example test", function() {
     expect($("#menu")).toBeVisible();
   });
 });
-{% endhighlight %}
+```
 
 O problema é que, como a animação do fade in leva um pequeno período de tempo para executar (400 ms por padrão), o menu ainda não está visível no momento em que a expectativa é executada. Uma solução inocente, mas pouco eficiente, para este problema seria executar a expectativa num [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout).
 
 Neste caso específico, como a animação é feita usando jQuery, há uma propriedade [jQuery.fx.off](https://api.jquery.com/jquery.fx.off/) que permite desabilitar todas as animações. Desta forma, todas as transições são feitas instantaneamente, fazendo com que o teste original funcione:
 
-{% highlight javascript %}
+```javascript
 describe("example test", function() {
   var jQueryFxOff;
 
@@ -69,13 +69,13 @@ describe("example test", function() {
     expect($("#menu")).toBeVisible();
   });
 });
-{% endhighlight %}
+```
 
 Note que o valor original da propriedade é armazenado numa variável e restaurado após o teste, para evitarmos que esta configuração afete outros testes que serão executados em sequencia.
 
 O segundo caso é quando temos algum código que só é executado após um período de tempo - usando [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout), por exemplo:
 
-{% highlight javascript %}
+```javascript
 module = {
   someRandomCode: function() {
   },
@@ -86,11 +86,11 @@ module = {
 }
 
 module.waitForIt();
-{% endhighlight %}
+```
 
 A melhor forma de testar este código é "fakeando" a passagem do tempo, para que o teste não precise aguardar. Uma boa ferramenta para isto são os os [fake timers](http://sinonjs.org/docs/#clock) do [Sinon.JS](http://sinonjs.org/):
 
-{% highlight javascript %}
+```javascript
 describe("my random test", function() {
   var clock;
 
@@ -110,11 +110,11 @@ describe("my random test", function() {
     expect(module.someRandomCode).toHaveBeenCalled();
   });
 });
-{% endhighlight %}
+```
 
 Outra boa opção é usar o [Jasmine Clock](http://jasmine.github.io/2.3/introduction.html#section-Jasmine_Clock):
 
-{% highlight javascript %}
+```javascript
 describe("my random test", function() {
   beforeEach(function() {
     jasmine.clock().install();
@@ -132,4 +132,4 @@ describe("my random test", function() {
     expect(module.someRandomCode).toHaveBeenCalled();
   });
 });
-{% endhighlight %}
+```

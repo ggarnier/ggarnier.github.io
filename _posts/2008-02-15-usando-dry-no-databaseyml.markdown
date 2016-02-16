@@ -13,7 +13,7 @@ Outro dia descobri uma maneira muito interessante de usar essa técnica no arqui
 
 Segue abaixo um exemplo de como definir estas configurações sem repetições:
 
-{% highlight ruby %}
+```ruby
 login: &login
   adapter: mysql
   username: username
@@ -31,6 +31,6 @@ test:
 production:
   <<: *login
   database: app_prod
-{% endhighlight %}
+```
 
 Só encontrei um problema: se você usar o [Aptana RadRails](http://www.aptana.com/rails/) para desenvolver, usando essa técnica, o modo "Data perspective", que permite analisar a estrutura do banco de dados e executar querys, retorna uma mensagem de erro ("Invalid YML syntax"). Fora isso, está tudo funcionando bem. No [NetBeans](http://www.netbeans.org/) não há este problema.

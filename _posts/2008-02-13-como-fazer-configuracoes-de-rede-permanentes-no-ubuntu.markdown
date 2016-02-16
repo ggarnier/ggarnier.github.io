@@ -13,13 +13,13 @@ Para tornar as configurações de rede permanentes, você deve editar os seguint
 
 - Configurações de interface de rede: arquivo `/etc/network/interfaces`. Para configurar a interface eth0, por exemplo, acrescente as seguintes linhas no final do arquivo, substituindo os endereços IP pelos valores correspondentes:
 
-{% highlight bash %}
+```bash
 auto eth0
 iface eth0 inet static
 address 192.168.254.3
 netmask 255.255.255.0
 gateway 192.168.254.254
-{% endhighlight %}
+```
 
 Após concluir as alterações, reinicie o serviço de rede com o comando
 `/etc/init.d/networking restart`.

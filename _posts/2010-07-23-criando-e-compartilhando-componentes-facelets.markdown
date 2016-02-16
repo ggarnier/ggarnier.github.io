@@ -13,7 +13,7 @@ A criação de componentes Facelets é muito simples, basta seguir os passos aba
 
 1. Criar o componente. Como exemplo, criei um chamado `itemFormulario`, que exibe um label, um campo de texto e as mensagens de erro correspondentes:
 
-    {% highlight xml %}
+    ```xml
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml"
         xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -29,13 +29,13 @@ A criação de componentes Facelets é muito simples, basta seguir os passos aba
         <h:message for="#{id}" />
     </ui:component>
     </html>
-    {% endhighlight %}
+    ```
 
     Esse arquivo será salvo em `/WEB-INF/facelets/` com o nome `itemFormulario.xhtml`. Neste exemplo, o componente utiliza os parâmetros `id`, `label` e `value`.
 
 2. Criar um arquivo de taglib para registrar os componentes criados. Este arquivo, que vou chamar de `projeto.taglib.xml`, será criado no diretório `/WEB-INF/facelets` do projeto, e será como no exemplo abaixo:
 
-    {% highlight xml %}
+    ```xml
     <?xml version="1.0"?>
     <!DOCTYPE facelet-taglib PUBLIC "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN" "https://facelets.dev.java.net/source/browse/*checkout*/facelets/src/etc/facelet-taglib_1_0.dtd">
     <facelet-taglib>
@@ -45,22 +45,22 @@ A criação de componentes Facelets é muito simples, basta seguir os passos aba
             <source>itemFormulario.xhtml</source>
         </tag>
     </facelet-taglib>
-    {% endhighlight %}
+    ```
 
     Neste exemplo, registrei o componente `itemFormulario`. Sempre que criar um novo componente, ele deverá ser registrado neste arquivo, através de uma nova tag `<tag>`.
 
 3. Registrar a biblioteca de taglib no projeto, adicionando o trecho abaixo ao arquivo `web.xml`:
 
-    {% highlight xml %}
+    ```xml
     <context-param>
         <param-name>facelets.LIBRARIES</param-name>
         <param-value>/WEB-INF/facelets/projeto.taglib.xml</param-value>
     </context-param>
-    {% endhighlight %}
+    ```
 
     Desta forma, os componentes declarados no arquivo de taglib poderão ser usados no seu projeto, como neste exemplo:
 
-    {% highlight xml %}
+    ```xml
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml"
      xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -80,7 +80,7 @@ A criação de componentes Facelets é muito simples, basta seguir os passos aba
         <custom:itemFormulario id="username" label="Digite seu login:" value="#{loginController.username}" />
     </body>
     </html>
-    {% endhighlight %}
+    ```
 
 A partir deste ponto, precisamos compartilhar estes componentes entre os diferentes projetos. Para isso, seguimos os passos abaixo:
 
@@ -88,12 +88,12 @@ A partir deste ponto, precisamos compartilhar estes componentes entre os diferen
 
 2. Atualizar no arquivo `web.xml` o trecho que registra a taglib:
 
-    {% highlight xml %}
+    ```xml
     <context-param>
         <param-name>facelets.LIBRARIES</param-name>
         <param-value>/META-INF/projeto.taglib.xml</param-value>
     </context-param>
-    {% endhighlight %}
+    ```
 
     Se for utilizar mais de uma taglib, declare-as separadas por ";" no trecho acima.
 
@@ -101,7 +101,7 @@ A partir deste ponto, precisamos compartilhar estes componentes entre os diferen
 
 Nas versões atuais do Facelets, a declaração da taglib no arquivo `web.xml` é desnecessária caso este arquivo esteja na raiz do diretório `/META-INF`. Os arquivos de componentes poderão ficar em outro diretório (ex: `/META-INF/facelets`), bastanto atualizar o arquivo de taglib de acordo com o diretório escolhido:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE facelet-taglib PUBLIC "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN" "https://facelets.dev.java.net/source/browse/*checkout*/facelets/src/etc/facelet-taglib_1_0.dtd">
 <facelet-taglib>
@@ -111,11 +111,11 @@ Nas versões atuais do Facelets, a declaração da taglib no arquivo `web.xml` �
         <source>/META-INF/facelets/itemFormulario.xhtml</source>
     </tag>
 </facelet-taglib>
-{% endhighlight %}
+```
 
 Há ainda um passo opcional, que é a criação de um arquivo TLD (taglib descriptor) para que a IDE possa validar os componentes que você criou. Um arquivo TLD tem o seguinte formato:
 
-{% highlight xml %}
+```xml
 <!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
 "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
 
@@ -161,7 +161,7 @@ Há ainda um passo opcional, que é a criação de um arquivo TLD (taglib descri
         </attribute>
     </tag>
 </taglib>
-{% endhighlight %}
+```
 
 Salve esse arquivo com o nome `projeto.taglib.tld`, no mesmo diretório do arquivo `projeto.taglib.xml`. Agora, ao abrir um arquivo XHTML que esteja usando o componente itemFormulario, a IDE exibirá os erros de validação (ex: um atributo marcado como required não foi definido). Com este arquivo criado, ao abrir um XHTML no Eclipse usando o editor de JSP, você terá também o recurso de autocomplete (Control + espaço), que exibirá todos os atributos do componente, assim como a descrição de cada um.
 

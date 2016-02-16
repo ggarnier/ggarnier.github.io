@@ -11,7 +11,7 @@ Como eu estava há algum tempo sem mexer com Ruby, resolvi fazer o ótimo curso 
 
 > In Ruby, we can define an abstract class that invokes certain undefined "abstract" methods, which are left for subclasses to define. For example:
 
-> {% highlight  ruby %}
+> ``` ruby
 # This class is abstract; it doesn't define hello or name
 # No special syntax is required: any class that invokes methods
 # that are intended for a subclass to implement is abstract
@@ -28,13 +28,13 @@ class ConcreteKlass < AbstractKlass
 end
 
 > ConcreteKlass.new.welcome # Displays "Hello Ruby students"
-{% endhighlight %}
+```
 
 Assim que li esse código, fiquei com uma pulga atrás da orelha. Ele mostra como um exemplo de classe abstrata uma classe que faz referência a métodos não definidos, explicando que seria necessário criar uma classe concreta estendendo esta classe e implementando os métodos necessários.
 
 Eu sempre pensei que classes abstratas fossem classes que não poderiam ser instanciadas, o que não é o caso do exemplo. É perfeitamente possível criar objetos da classe `AbstractKlass`. Só ocorrerá uma exceção se o método `welcome` do objeto criado for executado:
 
-{% highlight irb %}
+```irb
 irb(main):006:0> obj = AbstractKlass.new
 => #<AbstractKlass:0x37d490>
 irb(main):007:0> obj.class
@@ -42,7 +42,7 @@ irb(main):007:0> obj.class
 irb(main):008:0> obj.welcome
 NameError: undefined local variable or method `hello' for #<AbstractKlass:0x37d490>
         from (irb):9
-{% endhighlight %}
+```
 
 Resolvi levantar esta questão no forum do curso, e recebi uma resposta de um dos participantes dizendo que em Ruby o conceito de classes abstratas seria diferente daquele que apresentei acima. De acordo com a [definição da Wikipedia](http://en.wikipedia.org/wiki/Class_%28computer_science%29#Abstract_classes): "An abstract class, or abstract base class (ABC), is a class that cannot be instantiated".
 
@@ -53,7 +53,7 @@ Pesquisando sobre o assunto, encontrei referências apresentando algumas sugest�
 
 Uma das possibilidades mostradas nos links acima seria desta forma:
 
-{% highlight ruby %}
+```ruby
 class AbstractClass
   class AbstractClassInstiationError < RuntimeError
   end
@@ -67,11 +67,11 @@ class ConcreteClass < AbstractClass
   def initialize
   end
 end
-{% endhighlight %}
+```
 
 Isso teoricamente resolveria o problema:
 
-{% highlight irb %}
+```irb
 irb(main):043:0> obj1 = AbstractClass.new
 AbstractClass::AbstractClassInstiationError: Cannot instantiate this class directly
         from (irb):36:in `initialize'
@@ -82,7 +82,7 @@ irb(main):045:0> obj2 = ConcreteClass.new
 => #<ConcreteClass:0x309f9f>
 irb(main):046:0> obj2.class
 => ConcreteClass
-{% endhighlight %}
+```
 
 Porém, há um detalhe importantíssimo: em Ruby todas as classes são abertas, ou seja, sempre será possível reimplementar métodos ou adicionar módulos que alteram o comportamento da classe, tornando impossível proibir completamente a instanciação e, consequentemente, a implementação de classes abstratas (pelo menos de acordo com o conceito apresentado aqui).
 

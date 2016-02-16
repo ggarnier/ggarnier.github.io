@@ -11,7 +11,7 @@ Quem utiliza esta configuração e usa Firefox em ambos os sistemas operacionais
 
 O Firefox armazena um diretório com configurações pessoais do usuário. No Linux, esse diretório fica tipicamente em `/home/usuario/.mozilla/Firefox/`, e no Windows, em `C:\Documents and Settings\usuario\Dados de aplicativos\Mozilla\Firefox\`. Este diretório contém, entre outras coisas, um subdiretório `Profiles` com todos os perfis criados (mais detalhes sobre isso no post sobre [gerenciamento de perfis no Firefox]({% post_url 2009-02-05-gerenciamento-de-perfis-no-firefox %})) e um arquivo `profiles.ini`. Este arquivo é carregado na inicialização do browser, e faz referência aos perfis utilizados. O formato do arquivo é como mostra o exemplo abaixo:
 
-{% highlight ini %}
+```ini
 [General]
 StartWithLastProfile=1
 
@@ -25,7 +25,7 @@ Name=teste
 IsRelative=1
 Path=Profiles/nkc5ofgt.default
 Default=1
-{% endhighlight %}
+```
 
 O arquivo é dividido em seções. A primeira, `General`, tem somente o parâmetro `StartWithLastProfile`: se for 0, será exibida a [tela de seleção de perfis]({% post_url 2009-02-05-gerenciamento-de-perfis-no-firefox %}); se for 1, o último perfil que foi usado será escolhido automaticamente.
 
@@ -38,15 +38,15 @@ Mapeando uma partição do Windows no Linux
 
 Para montar uma partição do Windows, basta utilizar o comando `mount`, como no exemplo abaixo:
 
-{% highlight sh %}
+```sh
 sudo mount /dev/sda1 /media/windows
-{% endhighlight %}
+```
 
 Neste exemplo, a partição do Windows é `/dev/sda1`, e o diretório destino (que deve ser criado antes) é `/media/windows`. A partição pode ser FAT32 ou NTFS - neste caso, é necessário instalar o [ntfs-3g](http://www.tuxera.com/community/ntfs-3g-download/), que já vem por padrão na maioria das distribuições atuais. Para que a partição seja montada automaticamente na inicialização do sistema, inclua a linha abaixo no arquivo `/etc/fstab`:
 
-{% highlight sh %}
+```sh
 /dev/sda1 /media/windows ntfs defaults 0 0
-{% endhighlight %}
+```
 
 Caso a partição seja FAT32, substitua `ntfs` por `vfat` na linha acima.
 
@@ -63,27 +63,27 @@ Entre as duas opções, pessoalmente, prefiro a segunda, pois não gosto da idei
 
 Após realizar o mapeamento da partição, de uma das duas formas acima, basta configurar o arquivo `profiles.ini` do Firefox. Para isso, é possível configurar o path completo para o perfil desejado e definir o parâmetro `IsRelative=0`, ou fazer um link no diretório onde o Firefox armazena os perfis e configurar o path relativo, com o parâmetro `IsRelative=1`. A primeira configuração ficaria como no exemplo abaixo:
 
-{% highlight ini %}
+```ini
 [Profile0]
 Name=default
 IsRelative=0
 Path=/media/windows/Documents and Settings/guilherme/Dados de aplicativos/Mozilla/Firefox/Profiles/sa8ww6mz.default
-{% endhighlight %}
+```
 
 Para a segunda configuração, é necessário criar um link com o comando `ln`:
 
-{% highlight sh %}
+```sh
 ln -s /media/windows/Documents\ and\ Settings/guilherme/Dados\ de\ aplicativos/Mozilla/Firefox/Profiles/sa8ww6mz.default /home/guilherme/.mozilla/Firefox/Profiles/
-{% endhighlight %}
+```
 
 Neste caso, a configuração do arquivo ficaria assim:
 
-{% highlight ini %}
+```ini
 [Profile0]
 Name=default
 IsRelative=1
 Path=Profiles/sa8ww6mz.default
-{% endhighlight %}
+```
 
 Possíveis problemas
 -------------------

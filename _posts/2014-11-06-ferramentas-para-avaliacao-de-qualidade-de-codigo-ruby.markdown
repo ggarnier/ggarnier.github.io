@@ -146,10 +146,10 @@ A configuração de cada ferramenta é a seguinte:
 
 Configure a execução da ferramenta digitando os seguintes comandos no campo `Execute shell` da configuração do job:
 
-{% highlight sh %}
+```sh
 mkdir -p tmp
 gem install brakeman --no-ri --no-rdoc && brakeman -o tmp/brakeman-output.tabs --no-progress --separate-models --quiet
-{% endhighlight %}
+```
 
 Para visualizar os resultados, instale o [Brakeman Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Brakeman+Plugin) no Jenkins e selecione em `Post-build Actions` a opção `Publish Brakeman warnings`. Em `Brakeman Output File`, digite `tmp/brakeman-output.tabs`.
 
@@ -157,9 +157,9 @@ Para visualizar os resultados, instale o [Brakeman Plugin](https://wiki.jenkins-
 
 Adicione o seguinte comando no campo `Execute shell`:
 
-{% highlight sh %}
+```sh
 gem install rubycritic --no-ri --no-rdoc && rubycritic app lib
-{% endhighlight %}
+```
 
 Para visualizar os resultados, é necessário o plugin [HTML Publisher](https://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin). Após instalá-lo, selecione em `Post-build Actions` a opção `Publish HTML reports` e digite os seguintes valores:
 
@@ -171,10 +171,10 @@ Para visualizar os resultados, é necessário o plugin [HTML Publisher](https://
 
 Digite os comandos abaixo no campo `Execute shell`:
 
-{% highlight sh %}
+```sh
 mkdir -p tmp
 gem install rubocop --no-ri --no-rdoc && rubocop --fail-level E --rails --out tmp/rubocop.out app lib spec
-{% endhighlight %}
+```
 
 O plugin para exibir o resultado desta ferramenta é o [Warnings](https://wiki.jenkins-ci.org/display/JENKINS/Warnings+Plugin). Após instalá-lo, é necessário configurar um parser para os warnings do RuboCop. Vá até a configuração do Jenkins (`Manage Jenkins` -> `Configure System`). Em `Compiler Warnings`, adicione um novo parser com os seguintes valores:
 
@@ -183,13 +183,13 @@ O plugin para exibir o resultado desta ferramenta é o [Warnings](https://wiki.j
 - **Trend report name:** `RuboCop Warnings`
 - **Regular Expression:**
 
-{% highlight sh %}
+```
 ^([^:]+):(\d+):\d+: ([^:]): ([^:]+)$
-{% endhighlight %}
+```
 
 - **Mapping Script:**
 
-{% highlight sh %}
+```
 import hudson.plugins.warnings.parser.Warning
 
 String fileName = matcher.group(1)
@@ -198,12 +198,12 @@ String category = matcher.group(3)
 String message = matcher.group(4)
 
 return new Warning(fileName, Integer.parseInt(lineNumber), "RuboCop Warnings", category, message);
-{% endhighlight %}
+```
 
 - **Example Log Message:**
 
-{% highlight sh %}
+```
 attributes/default.rb:21:78: C: Use %r only for regular expressions matching more than 1 '/' character.
-{% endhighlight %}
+```
 
 Após salvar esta configuração, volte até a configuração do job e selecione em `Post-build Actions` a opção `Scan for compiler warnings`. Em `File pattern` digite `tmp/rubocop.out`, e no campo `Parser`, selecione o parser recém-criado, `RuboCop`.

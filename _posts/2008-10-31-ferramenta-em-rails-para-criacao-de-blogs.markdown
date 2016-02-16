@@ -13,7 +13,7 @@ A instalação pode ser feita através do comando gem (`gem install typo`), por�
 
 O Typo também possui um servidor de feeds RSS/Atom. Porém, na versão atual (5.1.3), recebi uma mensagem de erro ao tentar acessar os feeds. Encontrei o erro no arquivo `app/models/article.rb` e corrigi substituindo o método `link_to_author?` (linhas 384 a 386) pelo seguinte:
 
-{% highlight ruby %}
+```ruby
 def link_to_author?
   begin
     !user.email.blank? && blog.link_to_author
@@ -21,4 +21,4 @@ def link_to_author?
     return false
   end
 end
-{% endhighlight %}
+```
