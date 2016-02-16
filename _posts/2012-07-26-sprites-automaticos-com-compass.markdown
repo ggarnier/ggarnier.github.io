@@ -15,11 +15,11 @@ Para simplificar esta tarefa, é possível utilizar uma ferramenta para geraçã
 
 A configuração básica do Compass para geração de sprites segue o padrão abaixo:
 
-```ruby
+{% highlight ruby %}
 $imagens-spacing: 2px
 $imagens-sprite-dimensions: true
 @import "imagens/*.png"
-```
+{% endhighlight %}
 
 No exemplo acima, todas as propriedades são configuradas com o prefixo `imagens`. O sprite é configurado com espaçamento de 2 pixels entre cada imagem, para evitar sobreposição no limite entre as imagens. A segunda linha habilita a inclusão das dimensões das imagens no CSS gerado, o que é útil para manter fixo o tamanho ocupado pela imagem enquanto ela é carregada. A terceira linha informa quais imagens serão adicionadas. Neste caso, são todas as imagens com extensão png que estão no diretório `imagens`. É importante lembrar que o nome deste diretório deve ser igual ao prefixo utilizado nas propriedades.
 
@@ -27,19 +27,19 @@ Além de gerar o sprite, o Compass cria classes CSS para referenciar cada imagem
 
 O uso as imagens do sprite no seu CSS pode ser feito de duas formas: usando diretamente as classes criadas pelo Compass (como `imagens-excluir`, no exemplo anterior) ou utilizando um mixin do Compass no seu arquivo [Sass](http://sass-lang.com/):
 
-```css
+{% highlight css %}
 .minha-classe { @include imagens-sprite(excluir); }
-```
+{% endhighlight %}
 
 Ao utilizar uma destas configurações, a imagem será configurada como background do elemento.
 
 Para criar um segundo sprite, para a parte administrativa da aplicação, por exemplo, é necessário utilizar um prefixo diferente, como no exemplo abaixo:
 
-```ruby
+{% highlight ruby %}
 $imagens-admin-spacing: 2px
 $imagens-admin-sprite-dimensions: true
 @import "admin/imagens-admin/*.png"
-```
+{% endhighlight %}
 
 Neste exemplo, as imagens do sprite estão no diretório `admin/imagens-admin`, e o prefixo segue o nome do último diretório (`imagens-admin`). Isso significa que, no exemplo acima, não seria possível manter o sprite do admin em `admin/imagens`, pois haveria conflito de nomes com o outro sprite.
 
@@ -49,6 +49,6 @@ Os exemplos descritos acima descrevem apenas as configurações básicas para ge
 
 **UPDATE:** outra configuração útil para os sprites é o [layout das imagens](http://compass-style.org/help/tutorials/spriting/sprite-layouts/). Por padrão, o layout dos sprites é vertical, ou seja, cada imagem é colocada abaixo da anterior. Porém, o Compass também permite definir layout horizontal, diagonal ou smart. Neste último, a disposição das imagens é feita de acordo com o tamanho de cada uma, e o resultado é uma imagem menor do que com o layout padrão. No meu projeto, ao trocar o layout vertical pelo smart, o sprite ficou cerca de 10% menor. No primeiro exemplo deste post, a configuração do layout ficaria assim:
 
-```ruby
+{% highlight ruby %}
 $imagens-layout: smart
-```
+{% endhighlight %}

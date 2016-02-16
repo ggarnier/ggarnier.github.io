@@ -13,48 +13,48 @@ Em seguida, tentei instalar no Ubuntu 7.10. As dificuldades foram menores, mas a
 
 - Instalar os pré-requisitos:
 
-    ```bash
+    {% highlight bash %}
     sudo apt-get install apache2-mpm-prefork apache2-prefork-dev libapr1-dev
-    ```
+    {% endhighlight %}
 
 - Instalar a gem do mod\_rails:
 
-    ```bash
+    {% highlight bash %}
     sudo gem install passenger
-    ```
+    {% endhighlight %}
 
 - Definir as seguintes variáveis de ambiente:
 
-    ```bash
+    {% highlight bash %}
     export HTTPD=/path/to/httpd
     export APXS=/path/to/apxs (ou apxs2)
-    ```
+    {% endhighlight %}
 
 - Executar o script de instalação do módulo Apache:
 
-    ```bash
+    {% highlight bash %}
     sudo /usr/lib/ruby/gems/1.8/gems/passenger-1.0.1/bin/passenger-install-apache2-module
-    ```
+    {% endhighlight %}
 
 - Habilitar o mod\_rails no arquivo `httpd.conf` do Apache, adicionando as linhas a seguir:
 
-    ```apache
+    {% highlight apache %}
     LoadModule passenger_module /usr/lib/ruby/gems/1.8/gems/passenger-1.0.1/ext/apache2/mod_passenger.so
     RailsSpawnServer /usr/lib/ruby/gems/1.8/gems/passenger-1.0.1/bin/passenger-spawn-server
     RailsRuby /usr/bin/ruby1.8
     RailsEnv PROD
-    ```
+    {% endhighlight %}
 
 A última linha acima define o ambiente Rails que será utilizado. Se você omitir esta linha, será usado o ambiente padrão (production).
 
 - Criar um virtual host no Apache:
 
-    ```apache
+    {% highlight apache %}
     <virtualHost *:80>
       ServerName localhost
       DocumentRoot /var/www/rails/public
     </virtualHost>
-    ```
+    {% endhighlight %}
 
 Na configuração acima, `DocumentRoot` é o diretório public da sua aplicação Rails.
 
@@ -63,12 +63,12 @@ Ao concluir estas configurações e reiniciar o Apache, minha aplicação funcio
 - habilite o mod\_rewrite
 - adicione à configuração do virtual host:
 
-    ```apache
+    {% highlight apache %}
     <directory "/var/www/rails/public">
         Options         FollowSymLinks
         AllowOverride   All
     </directory>
-    ```
+    {% endhighlight %}
 
 - reinicie o Apache
 

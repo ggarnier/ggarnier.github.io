@@ -9,21 +9,21 @@ O [RVM](https://rvm.io/) já se tornou a opção padrão para gerenciar múltipl
 
 O Pik funciona de forma bastante semelhante ao RVM. Para instalá-lo, primeiro é necessário instalar o [Ruby Installer](http://rubyinstaller.org/), um pacote pré-configurado especialmente para instalar o Ruby no Windows. A documentação do Pik recomenda a versão 1.8.7. Em seguida, instale as gems `rake`, `isolate` e o próprio `pik`:
 
-```bat
+{% highlight bat %}
 gem install rake isolate pik
-```
+{% endhighlight %}
 
 Antes de instalar o `isolate`, talvez seja necessário atualizar o [Rubygems](http://rubygems.org/) com o comando abaixo:
 
-```bat
+{% highlight bat %}
 gem update --system
-```
+{% endhighlight %}
 
 O próximo passo é instalar o Pik no diretório de sua preferência. Um detalhe importante que já me custou um bom tempo é que o path completo não deve conter espaços. Execute o seguinte comando para instalar em `C:\Ruby\pik`, por exemplo:
 
-```bat
+{% highlight bat %}
 pik_install C:\Ruby\pik
-```
+{% endhighlight %}
 
 Concluída a instalação, o comando `pik help commands` exibe uma lista com os comandos disponíveis. Quem já usou o RVM não terá dificuldades, pois os comandos são bem semelhantes. Os comandos mais comuns são:
 
@@ -35,14 +35,14 @@ Concluída a instalação, o comando `pik help commands` exibe uma lista com os 
 
 Inicialmente, o comando `pik list` exibe apenas a versão 1.8.7:
 
-```bat
+{% highlight bat %}
 C:\Ruby\pik>pik list
 * 187: ruby 1.8.7 (2011-02-18 patchlevel 334) [i386-mingw32]
-```
+{% endhighlight %}
 
 Decidi instalar a última versão do Ruby e do JRuby. Após instalar estas duas versões, a saída do comando `pik list` ficou assim (o asterisco mostra a versão atualmente em uso):
 
-```bat
+{% highlight bat %}
 C:\Ruby\pik>pik install ruby
 ...
 C:\Ruby\pik>pik install jruby
@@ -51,11 +51,11 @@ C:\Ruby\pik>pik list
   161: jruby 1.6.1 (ruby-1.8.7-p330) (2011-04-12 85838f6) (Java HotSpot(TM) Client VM 1.6.0_24) [Windows XP-x86-java]
 * 187: ruby 1.8.7 (2011-02-18 patchlevel 334) [i386-mingw32]
   192: ruby 1.9.2dev (2010-05-31) [i386-mingw32]
-```
+{% endhighlight %}
 
 Para selecionar o JRuby, por exemplo, use o comando `pik use 161` (é importante lembrar que neste caso os comandos mudam de nome: `irb` vira `jirb`, `ruby` vira `jruby`):
 
-```bat
+{% highlight bat %}
 C:\Ruby\pik>pik use 161
 
 C:\Ruby\pik>ruby -v
@@ -64,11 +64,11 @@ ou externo, um programa operável ou um arquivo em lotes.
 
 C:\Ruby\pik>jruby -v
 jruby 1.6.1 (ruby-1.8.7-p330) (2011-04-12 85838f6) (Java HotSpot(TM) Client VM 1.6.0_24) [Windows XP-x86-java]
-```
+{% endhighlight %}
 
 Para instalar gems, basta usar o comando `gem install` normalmente. A gem será instalada na versão atual do Ruby (ou seja, a que você selecionou com o comando `pik use`). O comando `pik gem` permite instalar uma gem em todas as versões:
 
-```bat
+{% highlight bat %}
 C:\Ruby\pik>pik gem install mongo
 jruby 1.6.1 (ruby-1.8.7-p330) (2011-04-12 85838f6) (Java HotSpot(TM) Client VM 1.6.0_24) [Windows XP-x86-java]
 
@@ -100,11 +100,11 @@ Installing ri documentation for mongo-1.3.1...
 Installing RDoc documentation for bson-1.3.1...
 Installing RDoc documentation for mongo-1.3.1...
 
-```
+{% endhighlight %}
 
 O comando `pik ruby` permite executar um código em todas as versões instaladas, útil para verificar incompatibilidades entre as versões, como por exemplo [o construtor com parâmetros da classe Time]({% post_url 2011-03-01-representacao-de-data-e-hora-em-ruby-1-8-7-e-1-9 %}):
 
-```bat
+{% highlight bat %}
 C:\Ruby\pik>pik ruby -e "puts Time.new('2011-01-01')"
 jruby 1.6.1 (ruby-1.8.7-p330) (2011-04-12 85838f6) (Java HotSpot(TM) Client VM 1.6.0_24) [Windows XP-x86-java]
 
@@ -121,6 +121,6 @@ ruby 1.9.2dev (2010-05-31) [i386-mingw32]
 
 2011-01-01 00:00:00 -0200
 
-```
+{% endhighlight %}
 
 Mais detalhes sobre o funcionamento do Pik podem ser encontrados no [Github do projeto](https://github.com/vertiginous/pik).

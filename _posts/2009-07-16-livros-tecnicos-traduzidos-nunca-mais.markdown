@@ -19,42 +19,42 @@ Quando comecei a ler o capítulo 5, que fala sobre [generics](http://java.sun.co
 
 > Antes da versão 1.5, essa teria sido uma declaração de coleção exemplar:
 
-> ```java
+> {% highlight java %}
 /**
  * Minha coleção de selos. Contém apenas instâncias de Stamp.
  */
 private final stamps = ...;
-```
+{% endhighlight %}
 
 Não está faltando definir o tipo de `stamps`? Tudo bem, eu não devo ter entendido direito. Sigo a leitura e, um pouco mais à frente aparece o seguinte:
 
 > Com os genéricos, você substituiria o comentário por uma declaração de tipo aperfeiçoada para a coleção que passaria ao compilador as informações que anteriormente ficariam ocultas no comentário:
 
-> ```java
+> {% highlight java %}
 private final stamps = ...;
-```
+{% endhighlight %}
 
 Ué, mudou alguma coisa? Não é exatamente igual ao código anterior? Resolvi pegar o livro original em inglês emprestado com um amigo, e vejo que nele aparecem os seguintes trechos:
 
 > Before release 1.5, this would have been an exemplary collection declaration:
 
-> ```java
+> {% highlight java %}
 // Now a raw collection type - don´t do this!
 
 > /**
  * My stamp collection. Contains only Stamp instances.
  */
 private final <strong>Collection</strong> stamps = ... ;
-```
+{% endhighlight %}
 
 e
 
 > With generics, you replace the comment with an improved type declaration for the collection that tells the compiler the information that was previously hidden in the comment:
 
-> ```java
+> {% highlight java %}
 // Parameterized collection type - typesafe
 private final <strong>Collection &lt;Stamp&gt;</strong> stamps = ... ;
-```
+{% endhighlight %}
 
 Os destaques em negrito são do livro original. Aparentemente, tudo o que estava em negrito foi omitido na tradução! E, se estava em negrito, é porque é exatamente o trecho mais importante do código! Posteriormente, descobri que isso acontece em todo o capítulo 5. Do 6 em diante os códigos voltam ao normal e não encontrei mais nenhuma bizarrice, exceto a tradução de "thread" para "segmento".
 

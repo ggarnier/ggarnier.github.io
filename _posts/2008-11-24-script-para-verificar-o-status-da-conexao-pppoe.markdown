@@ -11,7 +11,7 @@ Apesar de a configuração acima ter funcionado no Ubuntu, a conexão parava de 
 
 Encontrei algumas referências a esse problema nos forums do Ubuntu, mas nenhuma solução definitiva. Para resolver, criei um script que verifica periodicamente se a conexão está ativa (na verdade, tenta pingar o site do provedor 3 vezes, aumentando o timeout a cada tentativa). Em caso negativo, executa os comandos `poff` e `pon`, conforme descrito acima, e repete o procedimento. Segue o script abaixo (salvei-o como `/home/guilherme/scripts/internet.sh`):
 
-```sh
+{% highlight sh %}
 #!/bin/bash
 
 cmd_ping="/bin/ping"
@@ -53,13 +53,13 @@ do
 done
 
 exit 0
-```
+{% endhighlight %}
 
 Os parâmetros no início do script definem os paths para os comandos utilizados (`ping`, `pon` e `poff`), o nome do provedor, conforme foi especificado no comando `pppoeconf` (o default é `dsl-provider`), o host que será pingado e a frequência de execução do loop.
 
 Para completar, coloquei este script na inicialização. Primeiro é necessário criar um script shell e salvá-lo no diretório `/etc/init.d` (usei [este artigo](http://articles.slicehost.com/2007/10/17/ubuntu-lts-adding-an-nginx-init-script) como modelo):
 
-```sh
+{% highlight sh %}
 #! /bin/sh
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -116,35 +116,35 @@ case "$1" in
 esac
 
 exit 0
-```
+{% endhighlight %}
 
 Em seguida, dê permissão de execução ao script (salvei o arquivo com o nome `internetd`):
 
-```sh
+{% highlight sh %}
 sudo chmod +x /etc/init.d/internetd
-```
+{% endhighlight %}
 
 Finalmente, para colocar o script na inicialização, o comando é:
 
-```sh
+{% highlight sh %}
 sudo /usr/sbin/update-rc.d -f internetd defaults
-```
+{% endhighlight %}
 
 Caso seja necessário interromper ou reiniciar o script, use o comando `sudo /etc/init.d/internetd start/stop/restart`.
 
 Depois que atualizei o Ubuntu para 8.04 não tive mais esse problema, porém no Ubuntu 7.10 acontecia constantemente. Além disso, este procedimento só é necessário caso o seu ponto de Internet esteja conectado diretamente ao micro, o que era o meu caso na época. Como posteriormente comprei um roteador com Wi-Fi, todo esse procedimento tornou-se desnecessário, pois o próprio roteador passou a fazer a autenticação PPPoE. Para desfazer as configurações, primeiramente retire o script do init.d com o comando:
 
-```sh
+{% highlight sh %}
 sudo /usr/sbin/update-rc.d -f internetd remove
-```
+{% endhighlight %}
 
 Em seguida, remova a interface PPP que foi criada pelo `pppoeconf` editando o arquivo `/etc/network/interfaces` e removendo ou comentando as linhas correspondentes a essa interface. No meu caso, as linhas eram as seguintes:
 
-```sh
+{% highlight sh %}
 auto dsl-provider
 iface dsl-provider inet ppp
 pre-up /sbin/ifconfig eth0 up # line maintained by pppoeconf
 provider dsl-provider
-```
+{% endhighlight %}
 
 **UPDATE:** os scripts acima estão disponíveis no [meu GitHub](http://github.com/ggarnier/pppoe-connection).
