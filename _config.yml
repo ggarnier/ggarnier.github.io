@@ -10,6 +10,7 @@ description: My random thoughts on software
 avatar:
 # language: ja
 language: en
+encoding: utf-8
 
 # Default settings
 defaults:
