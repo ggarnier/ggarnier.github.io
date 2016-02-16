@@ -74,7 +74,7 @@ recent_posts_num: 5
 #
 # Pagination.
 #
-paginate: 10
+paginate: 5
 paginate_path: page/:num
 
 #
