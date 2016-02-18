@@ -5,7 +5,7 @@ layout: default
 {% for post in paginator.posts %}
 <div class="article-wrapper">
     <article>
-    {% include article-header.html page=post link=true %}
+    {% include article-header.html page=post link=true eye_catch=false %}
         <section class="post-content">
             {% assign size = post.content | split: site.excerpt_separator | size %}
             {% if size > 1 %}

@@ -4,6 +4,7 @@ title: "Modern-world birthday statistics"
 date: 2016-02-18
 comments: true
 tags: [random, statistics, english]
+eye_catch: http://blog.guilhermegarnier.com/images/happy-birthday.svg
 ---
 When I was younger, I used to get a lot of phone calls during my birthdays, from my relatives and friends. But now the situation is much different.
 

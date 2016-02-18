@@ -4,6 +4,7 @@ title: "Software quality isn't optional"
 date: 2015-11-05
 comments: true
 tags: [software engineering, events, DevDay, talks, english]
+eye_catch: http://blog.guilhermegarnier.com/images/fast-food.jpg
 ---
 In the last weekend, I attended to [DevDay 2015](http://devday.devisland.com/), in Belo Horizonte, where I presented a talk about ["evolution of a distributed architecture"](http://blog.guilhermegarnier.com/evolucao-arquitetura/) (in portuguese).
 
