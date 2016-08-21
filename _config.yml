@@ -36,11 +36,11 @@ icons:
   dribbble:
   flickr:
   instagram:
-  linkedin:  # full URL
+  linkedin: # full URL
   pinterest:
   reddit:
   soundcloud:
-  stack_exchange:  # full URL
+  stack_exchange: # full URL
   steam:
   wordpress:
   youtube:
@@ -85,7 +85,7 @@ share_buttons:
   facebook: true   # needs ogp.fb.app_id
   hatena: false
 ogp:
-  image_url: http://qckanemoto.github.io/jekyll-qck-theme/assets/img/ogp.png
+  image_url: //ttskch.github.io/jekyll-tch-theme/assets/img/ogp.png
   fb:
     admin: # facebook admin id
     app_id: 1743274505884984 # facebook application id
@@ -94,10 +94,10 @@ ogp:
 # Gems.
 #
 gems:
+  - jekyll-paginate
   - jemoji
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
 
 #
 # Styles: see "_sass/base/_variables.scss"
@@ -112,8 +112,8 @@ include: ["_pages"]
 markdown: kramdown
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
-highlighter: rouge
 
 excerpt_separator: <!--more-->
 

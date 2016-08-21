@@ -19,7 +19,7 @@
 
     <meta name="description" content="{{ description }}">
 
-    <link rel="shortcut icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ site.favicon | prepend: site.baseurl }}" type="image/x-icon">
     <link rel="canonical" href="{{ url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl }}" />
 
@@ -42,7 +42,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1f5f360d80.js"></script>
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet">
 
     <link href="{{ '/assets/css/style.css' | prepend: site.baseurl }}" rel="stylesheet">
@@ -58,7 +58,7 @@
         {% endif %}
         <h1 class="clearfix">
             <a class="title {% if site.avatar == null %}slim{% endif %}" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
-            <p class="description">{{ site.description }}</p>
+            <br><span class="description">{{ site.description }}</span>
         </h1>
     </div>
 </header>
@@ -97,7 +97,7 @@
             <div class="block">
                 <h1>{{ site.str_recent_posts }}</h1>
                 <ul>
-                    {% assign posts = (site.posts | sort: 'date' | reverse) %}
+                    {% assign posts = (site.posts | where: 'hide', null | sort: 'date' | reverse) %}
                     {% for post in posts limit:site.recent_posts_num %}
                     <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                     {% endfor %}
@@ -109,7 +109,7 @@
 
 <footer class="site-footer">
     <div class="inner">
-        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/qckanemoto/jekyll-qck-theme">QckTheme</a></span>
+        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/ttskch/jekyll-tch-theme">TchTheme</a></span>
     </div>
 </footer>
 
