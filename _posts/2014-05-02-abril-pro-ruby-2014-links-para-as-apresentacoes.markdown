@@ -18,7 +18,7 @@ Apresentações:
 - [Marcio Trindade](http://twitter.com/marciotrindade) - [As Novidades do Ruby 2.1](http://www.slideshare.net/marciotrindade/ruby-21-33969653) - [vídeo](https://www.youtube.com/watch?v=dVevbSA8PKU)
 - [Lucas Dohmen](http://www.twitter.com/moonbeamlabs) - [Domain Driven Design & NoSQL](https://speakerdeck.com/moonglum/domain-driven-design-and-nosql) - [vídeo](https://www.youtube.com/watch?v=XJyApnfYONQ)
 - [Arthur Neves](http://www.twitter.com/arthurnn) - [Sharding Shopify](https://speakerdeck.com/arthurnn/abril-pro-ruby) - [vídeo](https://www.youtube.com/watch?v=Toqiyb2k_5E)
-- [Guilherme Garnier](http://twitter.com/guilhermgarnier) - [Arquitetura Distribuída: Escalando Projetos e Times](https://ggarnier.github.io/arquitetura-distribuida/) - [vídeo](https://www.youtube.com/watch?v=_0esATer3ss)
+- [Guilherme Garnier](http://twitter.com/gpgarnier) - [Arquitetura Distribuída: Escalando Projetos e Times](https://ggarnier.github.io/arquitetura-distribuida/) - [vídeo](https://www.youtube.com/watch?v=_0esATer3ss)
 - [Brian Morton](http://www.twitter.com/brianxq3) - [Dropping Rails for Dropwizard?](https://speakerdeck.com/bmorton/dropping-rails-for-dropwizard-from-abril-pro-ruby-2014) - [vídeo](https://www.youtube.com/watch?v=Pd3OxF4Ik1o)
 - [Pablo Astigarraga](http://www.twitter.com/poteland) - [The Dilemma of Simplicity](https://speakerdeck.com/pote/the-dilemma-of-simplicity) - [links relacionados](https://gist.github.com/pote/061f709186c0e93c3f1c) - [vídeo](https://www.youtube.com/watch?v=MOjeNcN1__c)
 - [Rafael França](http://www.twitter.com/rafaelfranca) - [Rails: The Hidden Parts](https://speakerdeck.com/rafaelfranca/rails-the-hidden-parts) - [vídeo](https://www.youtube.com/watch?v=nT9xMoNt9S0)
