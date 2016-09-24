@@ -1,3 +1,3 @@
 # My personal blog
 
-[blog.guilhermegarnier.com](http://blog.guilhermegarnier.com)
+[blog.guilhermegarnier.com](https://blog.guilhermegarnier.com)

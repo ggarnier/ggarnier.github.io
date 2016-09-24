@@ -4,9 +4,9 @@ title: "Globosat Play architecture overview"
 date: 2016-09-01
 comments: true
 tags: [architecture, Globo.com, videos, Rails, Ruby, talks, english]
-eye_catch: http://blog.guilhermegarnier.com/images/globosatplay-architecture.png
+eye_catch: https://blog.guilhermegarnier.com/images/globosatplay-architecture.png
 ---
-This post is at least one year late. Since I gave a few [talks](http://blog.guilhermegarnier.com/talks/) about [Globosat Play](http://globosatplay.globo.com/) architecture ([slides in portuguese](http://blog.guilhermegarnier.com/evolucao-arquitetura/)), I intended to write a more detailed post, but always procrastinated about this.
+This post is at least one year late. Since I gave a few [talks](https://blog.guilhermegarnier.com/talks/) about [Globosat Play](http://globosatplay.globo.com/) architecture ([slides in portuguese](https://blog.guilhermegarnier.com/evolucao-arquitetura/)), I intended to write a more detailed post, but always procrastinated about this.
 
 [Globo.com](http://www.globo.com/) is the internet arm of the largest media conglomerate from Brazil, and one of the largest in the world. One of the areas of the company is responsible for our video platform, which includes encoding, distribution and streaming for any website of the group that needs videos.
 
