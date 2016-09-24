@@ -8,6 +8,7 @@ baseurl:
 title: Guilherme Garnier
 description: My random thoughts on software
 avatar:
+favicon: /assets/img/ogp.png
 # language: ja
 language: en
 encoding: utf-8
@@ -85,7 +86,7 @@ share_buttons:
   facebook: true   # needs ogp.fb.app_id
   hatena: false
 ogp:
-  image_url: //ttskch.github.io/jekyll-tch-theme/assets/img/ogp.png
+  image_url: //ttskch.github.io/jekyll-ttskch-theme/assets/img/ogp.png
   fb:
     admin: # facebook admin id
     app_id: 1743274505884984 # facebook application id

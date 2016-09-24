@@ -97,7 +97,13 @@
             <div class="block">
                 <h1>{{ site.str_recent_posts }}</h1>
                 <ul>
-                    {% assign posts = (site.posts | where: 'hide', null | sort: 'date' | reverse) %}
+                    {% assign posts = '' | split: '' %}
+                    {% for post in site.posts %}
+                    {% if post.hide != true %}
+                    {% assign posts = posts | push: post %}
+                    {% endif %}
+                    {% endfor %}
+                    {% assign posts = posts | sort: 'date' | reverse %}
                     {% for post in posts limit:site.recent_posts_num %}
                     <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                     {% endfor %}
@@ -109,7 +115,7 @@
 
 <footer class="site-footer">
     <div class="inner">
-        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/ttskch/jekyll-tch-theme">TchTheme</a></span>
+        <span>Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/ttskch/jekyll-ttskch-theme">TtskchTheme</a></span>
     </div>
 </footer>
 
