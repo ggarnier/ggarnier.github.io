@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Handling request cache in Ruby"
-date: 2017-02-08
+excerpt: "How to handle back-end HTTP requests cache in Ruby apps to improve performance"
+date: 2017-02-09
 comments: true
-tags: [Ruby, cache, english]
+tags: [Ruby, cache, performance, HTTP, english]
 published: false
 ---
 Handling HTTP cache is one of the most important aspects when you need to scale a web application. If well used, it can be your best friend; but when badly used, it may be you worst enemy.
