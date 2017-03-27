@@ -35,7 +35,7 @@ That means we shouldn't trust anybody. Don't assume a service is up, available, 
 
 At Globosat Play, we decided to implement two levels of cache. We call them performance and stale.
 
-### Performance cache
+## Performance cache
 
 The performance cache is meant to avoid a flood of unnecessary requests to a single resource in a short period of time. Going back to Combate home page example, one of the services our back-end requests is a list of next UFC events. This doesn't change often; only when a new event is created, or when an event finishes, once a couple of weeks. That means, it's very wasteful to hit that service for every user accessing Combate home page. Suppose the events API response changes once a week; if that page gets 100,000 hits in that period, that means I would make 100,000 requests for that API, when I could just make one and keep the results in cache, which is much faster.
 
@@ -55,13 +55,13 @@ The problem in this scenario is, even if I'm sure that my events API only change
 
 Even if you have a service that can't be cached for that long, you could have a great benefit from caching the request for at least a few seconds. Imagine an application with 10,000 requests/s. If you set the back-end service request cache TTL for 1 second, you are making a single request for your service, instead of 10,000 requests!
 
-### Stale cache
+## Stale cache
 
 The second cache level is stale. It's a safety against problems like network instability or service unavailable. Let's use the latest videos API as an example. Suppose my application back-end tries to access this service and it gets a 500 HTTP status code. If I have a stale cached version of it, I can use it to give a valid response to its client. The stale data may be outdated by a few minutes or hours, but it's still better than giving no response at all - of course, that depends on the case. For some kinds of services, an outdated response may not be feasible, like giving the wrong balance when your client accesses his bank account. But for most of the cases, stale cache is a great alternative.
 
 Usually we set the performance cache time for a few minutes and the stale cache for a few hours. Our standard setup is 5 minutes and 6 hours, respectivelly.
 
-### Implementing cache levels in Ruby
+## Implementing cache levels in Ruby
 
 To implement performance and stale cache levels in Ruby applications, we created and open sourced a gem called [Content Gateway](https://github.com/globocom/content-gateway-ruby). With it, it's much easier to manage cache levels.
 
