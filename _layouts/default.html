@@ -94,8 +94,8 @@
             {% include adsense-sidebar.html %}
             <hr class="with-no-margin margin-bottom"/>
 
-            <div class="block">
-                <h1>{{ site.str_recent_posts }}</h1>
+            <div class="block sticky">
+                <h2>{{ site.str_recent_posts }}</h2>
                 <ul>
                     {% assign posts = '' | split: '' %}
                     {% for post in site.posts %}
