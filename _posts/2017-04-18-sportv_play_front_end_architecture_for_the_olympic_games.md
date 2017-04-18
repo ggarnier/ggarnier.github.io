@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "SporTV Play front-end architecture for the Olympic Games"
-date: 2017-03-29
+date: 2017-04-18
 excerpt: How we evolved our front-end architecture using Back-end for Front-end pattern to create a new experience in SporTV Play for the Olympic Games
 comments: true
 tags: [architecture, Globo.com, videos, React, software engineering, design patterns, english]
 eye_catch: https://blog.guilhermegarnier.com/images/bff.png
-published: false
 ---
 [Globosat Play](http://globosatplay.globo.com/) is a video product for pay TV subscribers, where you can catch up programs you missed on TV. It's like an umbrella for a couple of different channels. One of the most popular of them is [SporTV](http://sportv.globo.com/), one of the largest sports channels in Brazil.
 
@@ -32,7 +31,7 @@ As an example of this, we wanted to keep our header sticky after the user scroll
 
 ### Declarative programming model
 
-Another benefit that React brings is its declarative programming model, instead of the traditional imperative model. Here is a simple example, copied from [here](http://chibicode.com/react-js-introduction-for-people-who-know-just-enough-jquery-to-get-by/): it's a text area with a "Tweet" button, which should be disabled while the text area field is empty. Here is the imperative implementation using jQuery:
+Another benefit that React brings is its declarative programming model, instead of the traditional imperative model. [Here](http://chibicode.com/react-js-introduction-for-people-who-know-just-enough-jquery-to-get-by/) is a simple example: a text area with a "Tweet" button, which should be disabled while the text area field is empty. Here is the imperative implementation using jQuery:
 
 ```javascript
 // Initially disable the button
@@ -55,11 +54,8 @@ Now the React version:
 
 ```javascript
 class TweetBox extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      text: ""
-    }
+  state = {
+    text: ""
   }
 
   handleChange(event) {
