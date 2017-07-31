@@ -26,24 +26,60 @@ Glacier is also a great option for "backups of backups". If you want to be neuro
 The easiest way to use Glacier is with a third party client. I like [amazon-glacier-cmd-interface](https://github.com/uskudnik/amazon-glacier-cmd-interface). After setting up the basic configuration, you can create a vault and upload you files:
 
 ```
-glacier-cmd mkvault my-disaster-backup
-glacier-cmd upload my-disaster-backup my-file1 my-file2 ...
+$ glacier-cmd mkvault my-disaster-backup
+$ glacier-cmd upload my-disaster-backup my-file1 my-file2 ...
 ```
 
 To list archives in a vault:
 
 ```
-glacier-cmd inventory <vaultname>
+$ glacier-cmd inventory <vaultname>
 ```
 
 The inventory retrieval job takes a couple of hours to be processed. You can check its status with:
 
 ```
-glacier-cmd listjobs <vaultname>
+$ glacier-cmd listjobs <vaultname>
++------------------------------------------------------+---------------+--------------+--------------------+--------------------------+------------+
+|                      VaultARN                        |    Job ID     | Archive ID   |       Action       |        Initiated         |   Status   |
++------------------------------------------------------+---------------+--------------+--------------------+--------------------------+------------+
+| arn:aws:glacier:us-west-2:483413266890:vaults/backup | QYqdvM4k8q... |    None      | InventoryRetrieval | 2017-07-24T15:47:48.310Z | InProgress |
++------------------------------------------------------+---------------+--------------+--------------------+--------------------------+------------+
 ```
 
-And to download a file:
+When the job status change to `Succeeded`, run the inventory command again to check the archive list.
+
+To download an archive, first you need to check its id in the inventory:
 
 ```
-glacier-cmd download <vaultname> <filename>
+$ glacier-cmd inventory <vaultname>
+Inventory of vault: arn:aws:glacier:us-west-2:483413266890:vaults/backup
+Inventory Date: 2017-07-05T11:22:15Z
+
+Content:
++---------------+---------------------+----------------------+------------------+------------+
+|  Archive ID   | Archive Description |       Uploaded       | SHA256 tree hash |    Size    |
++---------------+---------------------+----------------------+------------------+------------+
+| uFg2FE_guu... | file1.tar.gz        | 2017-03-31T14:29:17Z | b41922e1a2...    | 1342622251 |
+| 43Wjk63Dcu... | file2.tar.gz        | 2017-03-31T17:18:28Z | 2346170d22...    | 2347810677 |
++---------------+---------------------+----------------------+------------------+------------+
+This vault contains 2 items, total size 2.5 GB.
+```
+
+Then, create an archive retrieval job using the archive id:
+
+```
+$ glacier-cmd getarchive <vaultname> <archive id>
++-----------+---------------+
+|   Header  |    Value      |
++-----------+---------------+
+|   JobId   | Xa17IAadQG... |
+| RequestId | cPcomv_vTf... |
++-----------+---------------+
+```
+
+When the download is available (you can check its status with `glacier-cmd listjobs <vaultname>`), download it with:
+
+```
+$ glacier-cmd download <vaultname> <archive id> --outfile <filename>
 ```
