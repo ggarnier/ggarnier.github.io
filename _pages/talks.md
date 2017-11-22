@@ -8,6 +8,11 @@ share: false
 
 In the last few years, I've spoke in a couple of conferences:
 
+### Goroutines and channels in practice
+
+- [GopherCon Brasil 2017](https://2017.gopherconbr.org/), 2017-11-18
+- [Slides]({{ site.url }}/talk-goroutines/)
+
 ### Evoluindo a experiência web no SporTV Play com React (Evolving SporTV Play web experience with React)
 
 - [QCon São Paulo 2017](http://qconsp.com/presentation/evoluindo-experiencia-web-no-sportv-play-com-react), 2017-04-24
