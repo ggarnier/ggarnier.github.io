@@ -37,6 +37,6 @@ In the last few years, I've spoke in a couple of conferences:
 
 ### Design Patterns em Ruby (Design Patterns in Ruby)
 
-- [RS on Rails 2014](http://lanyrd.com/2013/rsonrails/), 2013-1019 / [FISL 14](http://softwarelivre.org/fisl14), 2013-07-04
+- [RS on Rails 2013](https://twitter.com/rsonrails), 2013-10-19 / [FISL 14](http://softwarelivre.org/fisl14), 2013-07-04
 - [Slides]({% post_url 2013-07-09-minha-palestra-no-fisl-14-design-patterns-em-ruby %})
 - [Video](http://vimeo.com/69973911)
