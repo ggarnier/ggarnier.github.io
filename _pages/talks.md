@@ -10,7 +10,7 @@ In the last few years, I've spoke in a couple of conferences:
 
 ### Goroutines and channels in practice
 
-- [GopherCon Brasil 2017](https://2017.gopherconbr.org/), 2017-11-18
+- [The Developer's Conference Florianópolis 2018](http://www.thedevelopersconference.com.br/tdc/2018/index.html#florianopolis), 2018-04-21 / [GopherCon Brasil 2017](https://2017.gopherconbr.org/), 2017-11-18
 - [Slides]({{ site.url }}/talk-goroutines/)
 
 
