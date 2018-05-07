@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Anatomy of a code review"
-date: 2018-04-27
-published: false
+title: "The anatomy of a code review"
+date: 2018-05-08
+excerpt: "How to improve your development process with code reviews: the main benefits it brings to the team"
 comments: true
 tags: [code review, software engineering, english]
+eye_catch: https://blog.guilhermegarnier.com/images/ant-anatomy.png
 ---
 Code review is an amazing tool to improve code quality. It brings many benefits, to the reviewer, to the reviewee and to the team.
 
@@ -15,6 +16,10 @@ To add code reviews to your team workflow, first you need to use a version contr
 Basically, the idea is never committing directly to the master branch - or whatever other branch you choose as the main one, but usually it's the master branch. To start any changes to the source code, be it a new feature, refactorings or bugfixes, you need to create a new branch. You can also create conventions for the branch names, but this is not required.
 
 After you finish working on your own branch, you can trigger the code review process. If you use a repository manager like [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/), they already provide tools to help on this process: GitHub calls them pull requests, and GitLab, merge requests - to make it simpler, I'll call them change requests from now on. You can add some comments explaining the purpose of the proposed changes, and maybe links to other related change requests or issues. These are very important to make the objective of that change request clear for everyone that might review your code. When in doubt, be as specific and clear as you can. Here's an example from [tsuru](https://github.com/tsuru/tsuru), the project I currently work in: [a pull request with a detailed description](https://github.com/tsuru/tsuru/pull/1889).
+
+<a href="https://github.com/tsuru/tsuru/pull/1889" target="_blank">
+  <img src="/images/tsuru-pr-example1.png" alt="A pull request with a detailed description" style="width: 700px" />
+</a>
 
 As soon as a change request is created, it's available for any other member of the team to start reviewing it. You can also assign it to a specific person, if you think his opinion is important - maybe when you change a specific and obscure part of the project that not everyone dominates.
 
@@ -33,7 +38,11 @@ Usually a review comment can be added to a specific line or code block. That cou
 
 When the reviewer accepts the proposed changes, the reviewee has two options: merge/rebase the changes to the main branch and finish the code review process, or ask for another developer review. This is the case when the change is very complex and you're insecure you may be missing something. When this happens, the review process doesn't finish until all reviewers accept the changes.
 
-To illustrate, here's another example of code review from [tsuru](https://github.com/tsuru/tsuru): in [this pull request](https://github.com/tsuru/tsuru/pull/1881), I received a couple of comments with request changes. For most of them I changed the code according the suggestions, and [one of them](https://github.com/tsuru/tsuru/pull/1881#discussion_r156350529) generated a small discussion. What's best is that the discussion is documented in the pull request, for anyone to read and participate.
+To illustrate, here's another example of code review from [tsuru](https://github.com/tsuru/tsuru): in [this pull request](https://github.com/tsuru/tsuru/pull/1881), I received a couple of comments with request changes. For most of them I changed the code according the suggestions, and [one of them](https://github.com/tsuru/tsuru/pull/1881#pullrequestreview-82810505) generated a small discussion. What's best is that the discussion is documented in the pull request, for anyone to read and participate.
+
+<a href="https://github.com/tsuru/tsuru/pull/1881#pullrequestreview-82810505" target="_blank">
+  <img src="/images/tsuru-pr-example2.png" alt="A pull request discussion" style="width: 700px" />
+</a>
 
 ## Benefits of the code review
 
@@ -82,4 +91,4 @@ Finally, another common question is: are there exceptions to the "never commit t
 
 In fact, there are a couple of situations where you may bypass the code review process. One example is updating a dependency version. But I still think it's worth opening the change request, to make other team members aware of the changes. But this kind of decision is up to the team, and should be accorded among them.
 
-To finish, I suggest reading this great post about conducting code reviews: [How to Conduct Effective Code Reviews](https://insidedigitalocean.com/how-to-conduct-effective-code-reviews-18b823a07123).
+To finish, I suggest reading this great post about [how to conduct effective code reviews](https://insidedigitalocean.com/how-to-conduct-effective-code-reviews-18b823a07123).
