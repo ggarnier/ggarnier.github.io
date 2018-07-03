@@ -4,7 +4,7 @@ title: "Increasing productivity in tmux with a single prefix key"
 date: 2017-12-05
 excerpt: How to customize tmux prefix to a single key, and make it even more productive
 comments: true
-tags: [terminal, tmux, english]
+tags: [terminal, tmux, linux, english]
 eye_catch: https://blog.guilhermegarnier.com/images/keyboard.jpg
 ---
 [Tmux](https://github.com/tmux/tmux) is a fantastic tool for improving productivity when working with a terminal. One of the first things people configure when start using tmux is changing the prefix key. The default value is `control+b`, which is not very confortable to press with a single hand. And as you'll end up pressing it a lot, for every tmux command, the most common used configuration is changing it to `control+a`.
@@ -22,3 +22,9 @@ bind-key Home send-prefix
 ```
 
 Now I have a great configuration: I use a single key (`caps lock`) as prefix, and without losing any key functionality.
+
+**UPDATE:** to do this same configuration in Linux, you just need to open the `/usr/share/X11/xkb/symbols/pc` file and change the line that starts with `key <CAPS>` to this:
+
+```sh
+key <CAPS> {        [ Home          ]       };
+```
