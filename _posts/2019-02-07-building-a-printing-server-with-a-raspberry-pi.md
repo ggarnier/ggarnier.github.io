@@ -7,6 +7,8 @@ comments: true
 tags: [raspberry pi, linux, english]
 eye_catch: https://blog.guilhermegarnier.com/images/pi-printer.png
 ---
+<img src="/images/pi-printer.png" alt="Raspberry Pi printer server" />
+
 A few months ago, my wife needed to print a couple of documents. I had an old HP printer (Officejet 4355) sitting around, but I couldn't use it in her laptop - it's a [Chromebook](https://www.google.com/chromebook/), which doesn't support printer drivers. It can only print over the network, and my printer doesn't have network connection, just USB. The only way I could make that work was installing the printer in another computer and making it share the printer over the network. But I'd have to keep the other computer on and connected to the printer every time she wanted to print something, which isn't convenient.
 
 So I decided to remove the dust from an old [Raspberry Pi](https://www.raspberrypi.org/) (the original model B) I hadn't used for a while, and use it as a print server! Now I can print from any device, including her Chromebook and my Android phone.
