@@ -21,7 +21,7 @@ After you finish working on your own branch, you can trigger the code review pro
   <img src="/images/tsuru-pr-example1.png" alt="A pull request with a detailed description" style="width: 700px" />
 </a>
 
-As soon as a change request is created, it's available for any other member of the team to start reviewing it. You can also assign it to a specific person, if you think his opinion is important - maybe when you change a specific and obscure part of the project that not everyone dominates.
+As soon as a change request is created, it's available for any other member of the team to start reviewing it. You can also assign it to a specific person, if you think his/her opinion is important - maybe when you change a specific and obscure part of the project that not everyone dominates.
 
 As a reviewer, you job is to check many aspects of the code. Here's a non exaustive reference list:
 
