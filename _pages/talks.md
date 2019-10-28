@@ -8,6 +8,12 @@ share: false
 
 In the last few years, I've spoke in a couple of conferences:
 
+### The anatomy of a code review
+
+- [Python Brasil 2019](https://2019.pythonbrasil.org.br), 2019-10-25
+- [Slides]({{ site.url }}/talk-code-review/)
+
+
 ### A arquitetura do PaaS tsuru (tsuru PaaS architecture)
 
 - [FISL 18](http://fisl18.softwarelivre.org/index.php/en/), 2018-07-11
@@ -17,7 +23,7 @@ In the last few years, I've spoke in a couple of conferences:
 ### Goroutines and channels in practice
 
 - [FISL 18](http://fisl18.softwarelivre.org/index.php/en/), 2018-07-12 / [The Developer's Conference Florianópolis 2018](http://www.thedevelopersconference.com.br/tdc/2018/index.html#florianopolis), 2018-04-21 / [GopherCon Brasil 2017](https://2017.gopherconbr.org/), 2017-11-18
-- [Video (The Developer's Conference)](https://www.eventials.com/Globalcode/tdc-floripa-2018-stadium-sabado-3/)
+- [Video (FISL)](https://vimeo.com/320972545) - [video (The Developer's Conference)](https://www.eventials.com/Globalcode/tdc-floripa-2018-stadium-sabado-3/)
 - [Slides]({{ site.url }}/talk-goroutines/)
 
 
