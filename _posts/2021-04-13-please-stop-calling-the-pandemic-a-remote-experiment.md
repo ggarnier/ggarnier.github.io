@@ -5,6 +5,7 @@ date: 2021-04-13
 excerpt: "Working remotely during the pandemic is the opposite of an experiment"
 comments: true
 tags: [remote]
+eye_catch: https://blog.guilhermegarnier.com/images/hannah-wei-aso6SYJZGps-unsplash-resized.jpg
 ---
 <figure style="text-align: center">
   <img src="/images/hannah-wei-aso6SYJZGps-unsplash-resized.jpg" alt="Silhouette of a person sitting in front of a laptop" style="width: 720px">
