@@ -7,7 +7,7 @@ comments: true
 tags: [remote]
 ---
 <figure style="text-align: center">
-  <img src="/images/hannah-wei-aso6SYJZGps-unsplash.jpg" alt="Silhouette of a person sitting in front of a laptop" style="width: 720px">
+  <img src="/images/hannah-wei-aso6SYJZGps-unsplash-resized.jpg" alt="Silhouette of a person sitting in front of a laptop" style="width: 720px">
   <figcaption>Photo by <a href="https://unsplash.com/@herlifeinpixels?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Wei</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
