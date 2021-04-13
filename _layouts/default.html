@@ -30,7 +30,7 @@
     {% assign ogp_image_url = site.ogp.image_url %}
     {% endif %}
 
-    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:title" content="{{ title | smartify }}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="{{ ogp_image_url }}" />
     <meta property="og:url" content="{{ url }}" />

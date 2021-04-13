@@ -1,5 +1,5 @@
 {% include page-url-resolver.html page=include.page %}
-{% assign title = include.page.title | append: ' | ' | append: site.title %}
+{% assign title = include.page.title | smartify | append: ' | ' | append: site.title %}
 <div class="clearfix">
     <div style="float: right !important;">
         {% if site.share_buttons.twitter %}

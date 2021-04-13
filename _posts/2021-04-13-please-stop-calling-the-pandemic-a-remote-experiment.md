@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Please stop calling the pandemic a "remote work experiment"'
+title: "Please stop calling the pandemic a \"remote work experiment\""
 date: 2021-04-13
 excerpt: "Working remotely during the pandemic is the opposite of an experiment"
 comments: true
